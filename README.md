@@ -41,3 +41,9 @@ These metrics are collected using [CK](https://github.com/mauricioaniche/ck) too
 ```
 The outpts are saved as CSV files in `subjects/components/code-metrics`.
 
+After collecting code metrrics using CK, run the following script to collect all of the data in a single CSV file, this script also indicates the number of strng/number(float, int, or double) input parameters for each method.
+
+```bash
+. subjects/scripts/create-single-csv-for-code-metrics.sh subjects/components/components.csv 
+```
+
