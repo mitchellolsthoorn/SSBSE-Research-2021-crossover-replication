@@ -17,3 +17,10 @@ Since we are interested in projects which are using numbers and strings frequent
     * [Text](https://github.com/apache/commons-text) is a library focused on algorithms working on strings.
     * [Lang](https://github.com/apache/commons-lang) provides extra functionality for classes in java.lang.
     * [Logging](https://github.com/apache/commons-logging) is a thin adapter allowing configurable bridging to other, well known logging systems.
+
+To clone and build these components, run the following script:
+
+```bash
+. subjects/scripts/clone-and-build.sh subjects/components/components.csv 
+```
+This script has only one input parameter which is a CSV file containg data about the selected components.
