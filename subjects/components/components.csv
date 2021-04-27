@@ -1,0 +1,10 @@
+component,repo,type,tag,commit
+Math,https://github.com/apache/commons-math,Number,MATH_3_6_1,-
+Numbers,https://github.com/apache/commons-numbers,Number,rel/commons-numbers-1.0-beta1,-
+Geometry,https://github.com/apache/commons-geometry,Number,rel/commons-geometry-1.0-beta1,-
+RNG,https://github.com/apache/commons-rng,Number,RNG_1_3,-
+Statistics,https://github.com/apache/commons-statistics,Number,-,e6f7da62aae6638e9305ad4c242529765b4c5821
+CLI,https://github.com/apache/commons-cli,String,cli-1.4,-
+Text,https://github.com/apache/commons-text,String,rel/commons-text-1.9,-
+Lang,https://github.com/apache/commons-lang,String,rel/commons-lang-3.12.0,-
+Logging,https://github.com/apache/commons-logging,String,LOGGING_1_2,-
