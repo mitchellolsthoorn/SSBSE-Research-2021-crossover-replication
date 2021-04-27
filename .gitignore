@@ -62,3 +62,8 @@ subjects/**/*.lst
 subjects/**/*.MF
 subjects/**/*.xml
 subjects/**/new-joe*
+subjects/**/target/**/site
+subjects/**/site-content
+
+# We need javancss report for collecting the interesting classes
+!subjects/**/javancss-raw-report.xml
