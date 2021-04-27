@@ -33,7 +33,7 @@ do
     fi
 
     ##### Checkout to the latest tag #####
-        cd $component_dir
+    cd $component_dir
     # We skip tag detection for Statistics component because it doesnt have one.
     # Instead, we use the latest commit. When we perfomed this subject collection, the latest passing commit was: e6f7da62aae6638e9305ad4c242529765b4c5821
     if [[ "$component" == "Statistics" ]]; then
@@ -47,7 +47,12 @@ do
     fi
     
     cd $first_dir
-    
+
+    ##### Remove component's git files #####
+    cd $component_dir
+        rm -rf .git/
+    cd $first_dir
+
     ##### Build #####
 
     # cd $component_dir
