@@ -40,3 +40,25 @@ vignettes/*.pdf
 
 # Mac OS .DS_Store
 .DS_Store
+
+# Components' unnecessary files
+*.class
+*-cachefile
+package-list
+subjects/**/*.html
+subjects/**/*.js
+subjects/**/*.css
+subjects/**/*.txt
+subjects/**/*.policy
+subjects/**/*.ply
+subjects/**/*.dat
+subjects/**/*.csv
+subjects/**/META-INF
+subjects/**/*.properties
+subjects/**/issue*
+subjects/**/*.mac
+subjects/**/*.exec
+subjects/**/*.lst
+subjects/**/*.MF
+subjects/**/*.xml
+subjects/**/new-joe*
