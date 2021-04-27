@@ -25,7 +25,15 @@ do
     report_dir="$code_metrics_dir/commons-""$(tr [A-Z] [a-z] <<< "$component")"
     method_file="$report_dir/method.csv"
     IFS=
+
+    method_header_passed="0"
     while read -r line; do
+
+        # skip the title row
+        if [[ "$method_header_passed" -eq "0" ]]; then
+            method_header_passed="1"
+            continue
+        fi
         # IFS=,
         echo ")>"$line
 
