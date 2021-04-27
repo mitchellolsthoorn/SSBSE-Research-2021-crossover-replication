@@ -23,4 +23,11 @@ To clone and build these components, run the following script:
 ```bash
 . subjects/scripts/clone-and-build.sh subjects/components/components.csv 
 ```
-This script has only one input parameter which is a CSV file containg data about the selected components.
+__Note:__ This script has only one input parameter which is a CSV file containg data about the selected components.
+
+After running the previous script, execute the following script to copy the jar files to the `subjects/bin` directory.
+
+
+```bash
+. subjects/scripts/collect-jar-files.sh subjects/components/components.csv
+```
