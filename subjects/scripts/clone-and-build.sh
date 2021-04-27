@@ -55,11 +55,8 @@ do
     cd $first_dir
 
     ##### Build #####
-
     cd $component_dir
-    # mvn package
+    mvn package -DskipTests
     cd $first_dir
-
-
 
 done < $components_csv
