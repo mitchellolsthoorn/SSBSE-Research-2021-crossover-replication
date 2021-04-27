@@ -650,6 +650,11 @@
    <defaultGoal>clean package apache-rat:check checkstyle:check japicmp:cmp spotbugs:check javadoc:javadoc</defaultGoal>
    <pluginManagement>
       <plugins>
+            <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>javancss-maven-plugin</artifactId>
+        <version>2.1</version>
+      </plugin>
         <plugin>
           <groupId>org.apache.rat</groupId>
           <artifactId>apache-rat-plugin</artifactId>
