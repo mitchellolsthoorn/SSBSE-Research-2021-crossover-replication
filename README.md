@@ -31,3 +31,13 @@ After running the previous script, execute the following script to copy the jar 
 ```bash
 . subjects/scripts/collect-jar-files.sh subjects/components/components.csv
 ```
+
+### Collect code metrics
+For selecting the class under tests for our experiment, first, we need to have more information about the code metrics of classes in the components we selected in the previous section.
+These metrics are collected using [CK](https://github.com/mauricioaniche/ck) tool. To cllect these information, run the following script:
+
+```bash
+. subjects/scripts/collect-code-metrics.sh subjects/components/components.csv 
+```
+The outpts are saved as CSV files in `subjects/components/code-metrics`.
+
