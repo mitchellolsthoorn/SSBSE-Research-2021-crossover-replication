@@ -51,13 +51,14 @@ do
     ##### Remove component's git files #####
     cd $component_dir
         rm -rf .git/
+        rm .gitignore
     cd $first_dir
 
     ##### Build #####
 
-    # cd $component_dir
-    #     mvn package
-    # cd $first_dir
+    cd $component_dir
+    # mvn package
+    cd $first_dir
 
 
 
