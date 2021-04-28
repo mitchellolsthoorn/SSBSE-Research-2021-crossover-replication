@@ -1,4 +1,5 @@
 library(dplyr)
+library(readr)
 
 raw_results <- read.csv("../components/code-metrics/metrics.csv", stringsAsFactors = FALSE)
 
@@ -20,4 +21,4 @@ finnal_df <- finnal_df %>% select(project, class)
 
 
 
-write.csv(finnal_df,"../projects.csv",row.names = FALSE)
+write_csv(finnal_df,"../projects.csv",row.names = FALSE)
