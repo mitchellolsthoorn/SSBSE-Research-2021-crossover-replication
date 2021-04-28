@@ -67,3 +67,5 @@ subjects/**/site-content
 
 # We need CK reports for collecting the interesting classes
 !subjects/components/code-metrics/**/*.csv
+
+!projects.csv

@@ -9,4 +9,15 @@ df <- raw_results %>%
             sum_number_args= sum(number_args))
 
 
-write.csv(df,"../components/code-metrics/class-level-metrics.csv",row.names = FALSE)
+df <- df %>% filter(sum_string_args != 0 & sum_number_args != 0) %>%
+  arrange(desc(avg_ccn))
+
+finnal_df = head(df, 100)
+
+finnal_df <- finnal_df %>% select(project, class)
+
+
+
+
+
+write.csv(finnal_df,"../components/projects.csv",row.names = FALSE)
