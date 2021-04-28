@@ -20,4 +20,4 @@ finnal_df <- finnal_df %>% select(project, class)
 
 
 
-write.csv(finnal_df,"../components/projects.csv",row.names = FALSE)
+write.csv(finnal_df,"../projects.csv",row.names = FALSE)
