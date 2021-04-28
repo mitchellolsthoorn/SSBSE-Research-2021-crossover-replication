@@ -1,0 +1,39 @@
+* EvoSuite 1.1.1-SNAPSHOT
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.lang3.StringUtils
+* Starting Client-0
+* Connecting to master process on port 8449
+* Analyzing classpath: 
+  - projects/Lang/commons-lang3-3.12.0.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.StringUtils
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 7265
+* Using seed 2196926707
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 1575 / 7265
+[MASTER] 12:24:05.335 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 12:24:46.344 [logback-1] WARN  TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 12:25:16.586 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 125s and 129 generations, 124970 statements, best individual has fitness: 771.0
+* Minimizing test suite
+[MASTER] 12:28:18.545 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.lang3.StringUtils with seed 2196926707. Configuration id : default_120
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+[MASTER] 12:28:18.569 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 26 seconds more than allowed.
+* Computation finished
+[MASTER] 12:28:18.676 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 12:28:20.679 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 12:28:21.680 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 12:28:22.680 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 12:28:23.681 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 12:28:24.681 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 12:28:24.681 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing
+[MASTER] 12:28:24.782 [main] ERROR TestGeneration - failed to write statistics data

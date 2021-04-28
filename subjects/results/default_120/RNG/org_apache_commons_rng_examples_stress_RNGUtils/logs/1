@@ -1,0 +1,4 @@
+* EvoSuite 1.1.1-SNAPSHOT
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.rng.examples.stress.RNGUtils
+* Unknown class: org.apache.commons.rng.examples.stress.RNGUtils. Be sure its full qualifying name  is correct and the classpath is properly set with '-projectCP'

@@ -1,0 +1,124 @@
+* EvoSuite 1.1.1-SNAPSHOT
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.math3.dfp.DfpDec
+* Starting Client-0
+* Connecting to master process on port 14621
+* Analyzing classpath: 
+  - projects/Math/commons-math3-3.6.1-tools.jar
+  - projects/Math/commons-math3-3.6.1.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.math3.dfp.DfpDec
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1051
+* Using seed 1916201898
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 322 / 1051
+* Search finished after 121s and 280 generations, 15777 statements, best individual has fitness: 8.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 0%
+* Total number of goals: 134
+* Number of covered goals: 0
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 1%
+* Total number of goals: 138
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 417
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 186
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 5%
+* Total number of goals: 19
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 19
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 0%
+* Total number of goals: 138
+* Number of covered goals: 0
+* Generated 1 tests with total length 1
+* Resulting test suite's coverage: 0% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+[MASTER] 12:25:38.491 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: /usr/local/openjdk-8/jre/lib/amd64/libfontmanager.so: libfreetype.so.6: cannot open shared object file: No such file or directory
+Stack trace:
+java.lang.ClassLoader$NativeLibrary.load(Native Method)
+java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1934)
+java.lang.ClassLoader.loadLibrary(ClassLoader.java:1838)
+java.lang.Runtime.loadLibrary0(Runtime.java:871)
+java.lang.System.loadLibrary(System.java:1124)
+sun.font.FontManagerNativeLibrary$1.run(FontManagerNativeLibrary.java:61)
+java.security.AccessController.doPrivileged(Native Method)
+sun.font.FontManagerNativeLibrary.<clinit>(FontManagerNativeLibrary.java:32)
+sun.font.SunFontManager$1.run(SunFontManager.java:346)
+java.security.AccessController.doPrivileged(Native Method)
+sun.font.SunFontManager.<clinit>(SunFontManager.java:342)
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.DfpDec_1_tmp__ESTest_scaffolding.initEvoSuiteFramework(DfpDec_1_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:583)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:528)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:230)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+* Writing tests to file
+* Writing JUnit test case 'DfpDec_ESTest' to results/default_120/Math/org_apache_commons_math3_dfp_DfpDec/tests/1
+* Done!
+
+* Computation finished
