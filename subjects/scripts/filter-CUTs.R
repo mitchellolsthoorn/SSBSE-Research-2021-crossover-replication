@@ -11,6 +11,7 @@ df <- raw_results %>%
 
 
 df <- df %>% filter(sum_string_args != 0 & sum_number_args != 0) %>%
+  filter(!grepl("Test", class, fixed=TRUE)) %>%
   arrange(desc(avg_ccn))
 
 finnal_df = head(df, 100)
@@ -21,4 +22,4 @@ finnal_df <- finnal_df %>% select(project, class)
 
 
 
-write_csv(finnal_df,"../projects.csv",row.names = FALSE)
+write_csv(finnal_df,"../projects.csv")
