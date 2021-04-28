@@ -69,3 +69,4 @@ subjects/**/site-content
 !subjects/components/code-metrics/**/*.csv
 
 !projects.csv
+!configurations.csv
