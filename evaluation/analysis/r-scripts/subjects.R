@@ -31,10 +31,11 @@ cases_specifications <- final_df %>%
             number_args_avg = mean(sum_number_args), number_args_sd = sd(sum_number_args), number_args_max = max(sum_number_args), number_args_min = min(sum_number_args))
 
 # Since the number of selected cases from LOGGING project is 1, the standard deviation for this specific case is NA. We replace it with "-".
-cases_specifications$ccn_sd <- ifelse(is.na(cases_specifications$ccn_sd),"-",cases_specifications$ccn_sd)
-cases_specifications$string_args_sd <- ifelse(is.na(cases_specifications$string_args_sd),"-",cases_specifications$string_args_sd)
-cases_specifications$number_args_sd <- ifelse(is.na(cases_specifications$number_args_sd),"-",cases_specifications$number_args_sd)
-
+#cases_specifications$ccn_sd <- ifelse(is.na(cases_specifications$ccn_sd),"-",cases_specifications$ccn_sd)
+#cases_specifications$string_args_sd <- ifelse(is.na(cases_specifications$string_args_sd),"-",cases_specifications$string_args_sd)
+#cases_specifications$number_args_sd <- ifelse(is.na(cases_specifications$number_args_sd),"-",cases_specifications$number_args_sd)
+# Generate and save the final table
+generateSubjectsTable(cases_specifications)
 
 
 
