@@ -1,0 +1,101 @@
+* EvoSuite 1.1.0
+* Configuration: crossover_120
+* Going to generate test cases for class: org.apache.commons.lang3.ObjectUtils
+* Starting Client-0
+* Connecting to master process on port 17337
+* Analyzing classpath: 
+  - projects/Lang/commons-lang3-3.12.0.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.ObjectUtils
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1126
+* Using seed 4164199115
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 455 / 1126
+[MASTER] 14:54:21.499 [logback-2] ERROR TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 14:54:21.500 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 14:54:21.500 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 14:54:21.505 [logback-2] ERROR TestCluster - Failed to check cache for java.util.ArrayDeque<E> : Type points to itself
+[MASTER] 14:54:21.507 [logback-2] ERROR TestCluster - Failed to check cache for java.util.ArrayList<E> : Type points to itself
+[MASTER] 14:54:21.508 [logback-2] ERROR TestCluster - Failed to check cache for java.util.EnumMap<K, V> : Type points to itself
+[MASTER] 14:54:21.509 [logback-2] ERROR TestCluster - Failed to check cache for java.util.EnumSet<E> : Type points to itself
+[MASTER] 14:54:21.509 [logback-2] ERROR TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 14:54:21.510 [logback-2] ERROR TestCluster - Failed to check cache for java.util.HashSet<E> : Type points to itself
+[MASTER] 14:54:21.511 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Hashtable<K, V> : Type points to itself
+[MASTER] 14:54:21.512 [logback-2] ERROR TestCluster - Failed to check cache for java.util.IdentityHashMap<K, V> : Type points to itself
+[MASTER] 14:54:21.512 [logback-2] ERROR TestCluster - Failed to check cache for java.util.LinkedHashMap<K, V> : Type points to itself
+[MASTER] 14:54:21.513 [logback-2] ERROR TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself
+[MASTER] 14:54:21.514 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Stack<E> : Type points to itself
+[MASTER] 14:54:21.515 [logback-2] ERROR TestCluster - Failed to check cache for java.util.TreeMap<K, V> : Type points to itself
+[MASTER] 14:54:21.516 [logback-2] ERROR TestCluster - Failed to check cache for java.util.TreeSet<E> : Type points to itself
+[MASTER] 14:54:21.517 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Vector<E> : Type points to itself
+[MASTER] 14:54:22.719 [logback-2] ERROR TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 14:54:34.716 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 14:54:41.408 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.evosuite.runtime.mock.java.text.MockDateFormat canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 14:54:53.480 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.evosuite.runtime.mock.java.util.MockCalendar canUseFunctionalMocks=true, canBeMocked: false
+* Computation finished
+[MASTER] 14:55:42.003 [logback-2] ERROR TestCaseExecutor - TG: Exception caught: 
+java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.runtime.sandbox.MSecurityManager.goingToEndTestCase(MSecurityManager.java:359)
+	at org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(Sandbox.java:141)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:275)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:262)
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:138)
+	at org.evosuite.ga.metaheuristics.mosa.structural.MultiCriteriaManager.calculateFitness(MultiCriteriaManager.java:386)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.calculateFitness(DynaMOSA.java:184)
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.breedNextGeneration(AbstractMOSA.java:187)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.evolve(DynaMOSA.java:66)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.generateSolution(DynaMOSA.java:167)
+	at org.evosuite.ga.metaheuristics.TestSuiteAdapter.generateSolution(TestSuiteAdapter.java:114)
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:123)
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:630)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:205)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[MASTER] 14:55:42.003 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.lang3.ObjectUtils with seed 4164199115. Configuration id : crossover_120
+java.lang.Error: java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:144)
+	at org.evosuite.ga.metaheuristics.mosa.structural.MultiCriteriaManager.calculateFitness(MultiCriteriaManager.java:386)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.calculateFitness(DynaMOSA.java:184)
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.breedNextGeneration(AbstractMOSA.java:187)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.evolve(DynaMOSA.java:66)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.generateSolution(DynaMOSA.java:167)
+	at org.evosuite.ga.metaheuristics.TestSuiteAdapter.generateSolution(TestSuiteAdapter.java:114)
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:123)
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:630)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:205)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.runtime.sandbox.MSecurityManager.goingToEndTestCase(MSecurityManager.java:359)
+	at org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(Sandbox.java:141)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:275)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:262)
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:138)
+	... 15 common frames omitted
+[MASTER] 14:55:42.145 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 14:55:44.149 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 14:55:45.150 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 14:55:46.151 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 14:55:47.151 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 14:55:48.152 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 14:55:48.152 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing
+[MASTER] 14:55:48.253 [main] ERROR TestGeneration - failed to write statistics data

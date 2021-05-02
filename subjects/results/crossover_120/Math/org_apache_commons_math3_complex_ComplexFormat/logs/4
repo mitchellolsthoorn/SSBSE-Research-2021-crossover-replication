@@ -1,0 +1,84 @@
+* EvoSuite 1.1.0
+* Configuration: crossover_120
+* Going to generate test cases for class: org.apache.commons.math3.complex.ComplexFormat
+* Starting Client-0
+* Connecting to master process on port 20650
+* Analyzing classpath: 
+  - projects/Math/commons-math3-3.6.1-tools.jar
+  - projects/Math/commons-math3-3.6.1.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.math3.complex.ComplexFormat
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 447
+* Using seed 426632172
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 186 / 447
+[MASTER] 15:04:48.595 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.apache.commons.math3.complex.ComplexFormat.format(Lorg/apache/commons/math3/complex/Complex;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;: I74 Branch 10 IFEQ L218 - false in context: org.apache.commons.math3.complex.ComplexFormat:format(Lorg/apache/commons/math3/complex/Complex;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
+* Search finished after 121s and 423 generations, 137282 statements, best individual has fitness: 55.0
+* Minimizing test suite
+* Computation finished
+[MASTER] 15:07:06.984 [logback-2] ERROR TestCaseExecutor - TG: Exception caught: 
+java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.runtime.sandbox.MSecurityManager.goingToEndTestCase(MSecurityManager.java:359)
+	at org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(Sandbox.java:141)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:275)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:262)
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:138)
+	at org.evosuite.testcase.TestFitnessFunction.runTest(TestFitnessFunction.java:92)
+	at org.evosuite.testcase.TestFitnessFunction.getFitness(TestFitnessFunction.java:61)
+	at org.evosuite.testcase.TestFitnessFunction.getFitness(TestFitnessFunction.java:34)
+	at org.evosuite.testcase.TestCaseMinimizer.isWorse(TestCaseMinimizer.java:92)
+	at org.evosuite.testcase.TestCaseMinimizer.minimize(TestCaseMinimizer.java:169)
+	at org.evosuite.testsuite.TestSuiteMinimizer.minimizeTests(TestSuiteMinimizer.java:216)
+	at org.evosuite.testsuite.TestSuiteMinimizer.minimize(TestSuiteMinimizer.java:102)
+	at org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:410)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[MASTER] 15:07:06.985 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.math3.complex.ComplexFormat with seed 426632172. Configuration id : crossover_120
+java.lang.Error: java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:144)
+	at org.evosuite.testcase.TestFitnessFunction.runTest(TestFitnessFunction.java:92)
+	at org.evosuite.testcase.TestFitnessFunction.getFitness(TestFitnessFunction.java:61)
+	at org.evosuite.testcase.TestFitnessFunction.getFitness(TestFitnessFunction.java:34)
+	at org.evosuite.testcase.TestCaseMinimizer.isWorse(TestCaseMinimizer.java:92)
+	at org.evosuite.testcase.TestCaseMinimizer.minimize(TestCaseMinimizer.java:169)
+	at org.evosuite.testsuite.TestSuiteMinimizer.minimizeTests(TestSuiteMinimizer.java:216)
+	at org.evosuite.testsuite.TestSuiteMinimizer.minimize(TestSuiteMinimizer.java:102)
+	at org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:410)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.runtime.sandbox.MSecurityManager.goingToEndTestCase(MSecurityManager.java:359)
+	at org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(Sandbox.java:141)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:275)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:262)
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:138)
+	... 15 common frames omitted
+[MASTER] 15:07:07.104 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 15:07:09.107 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 15:07:10.108 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 15:07:11.109 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 15:07:12.109 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 15:07:13.110 [main] ERROR SearchStatistics - No obtained value for output variable: BranchCoverage
+[MASTER] 15:07:13.110 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing
+[MASTER] 15:07:13.211 [main] ERROR TestGeneration - failed to write statistics data

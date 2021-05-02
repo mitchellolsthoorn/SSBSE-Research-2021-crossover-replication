@@ -1,0 +1,2242 @@
+* EvoSuite 1.1.0
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter
+* Starting Client-0
+* Connecting to master process on port 6636
+* Analyzing classpath: 
+  - projects/Geometry/commons-geometry-core-1.0-beta1.jar
+  - projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar
+  - projects/Geometry/commons-geometry-spherical-1.0-beta1.jar
+  - projects/Geometry/commons-geometry-hull-1.0-beta1.jar
+  - projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:26:05.316 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.numbers.core.Precision was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 15:26:05.317 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.commons.numbers.core.Precision
+[MASTER] 15:26:05.319 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.numbers.arrays.LinearCombination was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 15:26:05.324 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.commons.numbers.arrays.LinearCombination
+[MASTER] 15:26:05.325 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.numbers.arrays.LinearCombination was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 15:26:05.334 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.numbers.arrays.LinearCombination was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 15:26:05.614 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.numbers.angle.PlaneAngleRadians was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 15:26:05.614 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.commons.numbers.angle.PlaneAngleRadians
+[MASTER] 15:26:05.616 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.numbers.angle.PlaneAngleRadians was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 15:26:05.708 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.numbers.quaternion.Quaternion was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 15:26:05.709 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.commons.numbers.quaternion.Quaternion
+[MASTER] 15:26:05.944 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.numbers.quaternion.Quaternion was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 15:26:06.600 [logback-2] ERROR AbstractMOSA - I am OFF
+* Total number of test goals for DYNAMOSA: 142
+* Using seed 419107045
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 62 / 142
+* Search finished after 121s and 280 generations, 110213 statements, best individual has fitness: 6.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 59
+* Number of covered goals: 58
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 57%
+* Total number of goals: 7
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Generated 11 tests with total length 38
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 53%
+* Compiling and checking tests
+[MASTER] 15:28:14.012 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_0_1619796492577/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_0_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_0_1619796492577/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_0_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:14.012 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.012 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.017 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D.RegionNode1D is not within bounds of type-variable N: 25
+[MASTER] 15:28:14.017 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D.RegionNode1D is not within bounds of type-variable N: 25
+[MASTER] 15:28:14.019 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_0_1619796492577/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_0_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:12 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree;
+12: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+13: import org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D;
+14: import org.apache.commons.geometry.spherical.oned.Point1S;
+15: import org.evosuite.runtime.EvoRunner;
+16: import org.evosuite.runtime.EvoRunnerParameters;
+17: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+18: import org.junit.runner.RunWith;
+19: 
+20: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+21: public class BSPTreePrinter_0_tmp__ESTest extends BSPTreePrinter_0_tmp__ESTest_scaffolding {
+22: 
+23:   @Test(timeout = 4000)
+24:   public void test0()  throws Throwable  {
+25:       BSPTreePrinter<Point1S, RegionBSPTree1D.RegionNode1D> bSPTreePrinter0 = new BSPTreePrinter<Point1S, RegionBSPTree1D.RegionNode1D>((-1));
+26:       RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D0 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+27:       doReturn(0, 0).when(regionBSPTree1D_RegionNode1D0).depth();
+28:       doReturn((AbstractBSPTree.AbstractNode) null).when(regionBSPTree1D_RegionNode1D0).getParent();
+29:       doReturn(true).when(regionBSPTree1D_RegionNode1D0).isPlus();
+30:       bSPTreePrinter0.visit(regionBSPTree1D_RegionNode1D0);
+31:       assertEquals("...", bSPTreePrinter0.toString());
+32:   }
+33: }
+RegularFileObject[/tmp/EvoSuite_0_1619796492577/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_0_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:12 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class BSPTreePrinter_0_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+78:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+79:   }
+80: 
+81:   private static void initializeClasses() {
+82:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_0_tmp__ESTest_scaffolding.class.getClassLoader() ,
+83:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+84:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+85:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+86:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+87:       "org.apache.commons.geometry.euclidean.oned.Interval",
+88:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+89:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+91:       "org.apache.commons.geometry.core.Point",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+93:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+94:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+95:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+96:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+97:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+98:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+99:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+100:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+101:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+107:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+108:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+109:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+111:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+113:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+114:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+115:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+116:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+117:       "org.apache.commons.geometry.core.Spatial",
+118:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+119:       "org.apache.commons.geometry.core.Sized",
+120:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+121:       "org.apache.commons.geometry.spherical.twod.Point2S",
+122:       "org.apache.commons.geometry.core.partitioning.Splittable",
+123:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+124:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+126:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+128:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+129:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+131:       "org.apache.commons.geometry.core.Vector",
+132:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+134:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+136:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+137:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+138:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+139:       "org.apache.commons.geometry.core.RegionLocation",
+140:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+141:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+142:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+143:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+144:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+145:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+146:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+148:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+149:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+150:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+151:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+152:       "org.apache.commons.geometry.core.Region",
+153:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+154:       "org.apache.commons.geometry.spherical.oned.Point1S",
+155:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+156:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+157:     );
+158:   } 
+159:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+160:     mock(Class.forName("org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D", false, BSPTreePrinter_0_tmp__ESTest_scaffolding.class.getClassLoader()));
+161:   }
+162: 
+163:   private static void resetClasses() {
+164:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_0_tmp__ESTest_scaffolding.class.getClassLoader()); 
+165: 
+166:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+167:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+168:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+169:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+170:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+171:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+172:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+173:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+174:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+175:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+176:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+177:     );
+178:   }
+179: }
+
+[MASTER] 15:28:14.021 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Point1S, RegionBSPTree1D.RegionNode1D> bSPTreePrinter0 = new BSPTreePrinter<Point1S, RegionBSPTree1D.RegionNode1D>((-1));
+RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D0 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+doReturn(0, 0).when(regionBSPTree1D_RegionNode1D0).depth();
+doReturn((AbstractBSPTree.AbstractNode) null).when(regionBSPTree1D_RegionNode1D0).getParent();
+doReturn(true).when(regionBSPTree1D_RegionNode1D0).isPlus();
+bSPTreePrinter0.visit(regionBSPTree1D_RegionNode1D0);
+assertEquals("...", bSPTreePrinter0.toString());
+
+
+[MASTER] 15:28:14.207 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_1_1619796494053/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_1_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_1_1619796494053/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_1_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:14.208 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.208 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.209 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D.RegionNode2D is not within bounds of type-variable N: 22
+[MASTER] 15:28:14.209 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D.RegionNode2D is not within bounds of type-variable N: 22
+[MASTER] 15:28:14.213 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_1_1619796494053/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_1_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:14 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+11: import org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D;
+12: import org.apache.commons.geometry.spherical.twod.Point2S;
+13: import org.evosuite.runtime.EvoRunner;
+14: import org.evosuite.runtime.EvoRunnerParameters;
+15: import org.junit.runner.RunWith;
+16: 
+17: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+18: public class BSPTreePrinter_1_tmp__ESTest extends BSPTreePrinter_1_tmp__ESTest_scaffolding {
+19: 
+20:   @Test(timeout = 4000)
+21:   public void test0()  throws Throwable  {
+22:       BSPTreePrinter<Point2S, RegionBSPTree2D.RegionNode2D> bSPTreePrinter0 = new BSPTreePrinter<Point2S, RegionBSPTree2D.RegionNode2D>(91);
+23:       String string0 = bSPTreePrinter0.toString();
+24:       assertEquals("", string0);
+25:   }
+26: }
+RegularFileObject[/tmp/EvoSuite_1_1619796494053/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_1_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:14 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class BSPTreePrinter_1_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+76:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+77:   }
+78: 
+79:   private static void initializeClasses() {
+80:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_1_tmp__ESTest_scaffolding.class.getClassLoader() ,
+81:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+82:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+83:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+84:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+85:       "org.apache.commons.geometry.euclidean.oned.Interval",
+86:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+87:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+88:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+89:       "org.apache.commons.geometry.core.Point",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+91:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+93:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+94:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+95:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+96:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+97:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+98:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+99:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+100:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+101:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+107:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+108:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+109:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+111:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+113:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+114:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+115:       "org.apache.commons.geometry.core.Spatial",
+116:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+117:       "org.apache.commons.geometry.core.Sized",
+118:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+119:       "org.apache.commons.geometry.spherical.twod.Point2S",
+120:       "org.apache.commons.geometry.core.partitioning.Splittable",
+121:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+122:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+123:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+124:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+126:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+128:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+129:       "org.apache.commons.geometry.core.Vector",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+131:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+132:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+134:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+136:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+137:       "org.apache.commons.geometry.core.RegionLocation",
+138:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+139:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+140:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+141:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+142:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+143:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+144:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+145:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+146:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+148:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+149:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+150:       "org.apache.commons.geometry.core.Region",
+151:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+152:       "org.apache.commons.geometry.spherical.oned.Point1S",
+153:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+154:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+155:     );
+156:   } 
+157: 
+158:   private static void resetClasses() {
+159:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_1_tmp__ESTest_scaffolding.class.getClassLoader()); 
+160: 
+161:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+162:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+163:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+164:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+165:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+166:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+167:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+168:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+169:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+170:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+171:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+172:     );
+173:   }
+174: }
+
+[MASTER] 15:28:14.214 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Point2S, RegionBSPTree2D.RegionNode2D> bSPTreePrinter0 = new BSPTreePrinter<Point2S, RegionBSPTree2D.RegionNode2D>(91);
+String string0 = bSPTreePrinter0.toString();
+assertEquals("", string0);
+
+
+[MASTER] 15:28:14.426 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_2_1619796494218/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_2_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_2_1619796494218/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_2_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:14.426 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.426 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.427 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D.RegionNode2D is not within bounds of type-variable N: 25
+[MASTER] 15:28:14.427 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D.RegionNode2D is not within bounds of type-variable N: 25
+[MASTER] 15:28:14.428 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_2_1619796494218/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_2_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:14 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+12: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor;
+13: import org.apache.commons.geometry.euclidean.oned.Vector1D;
+14: import org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D;
+15: import org.evosuite.runtime.EvoRunner;
+16: import org.evosuite.runtime.EvoRunnerParameters;
+17: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+18: import org.junit.runner.RunWith;
+19: 
+20: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+21: public class BSPTreePrinter_2_tmp__ESTest extends BSPTreePrinter_2_tmp__ESTest_scaffolding {
+22: 
+23:   @Test(timeout = 4000)
+24:   public void test0()  throws Throwable  {
+25:       BSPTreePrinter<Vector1D, RegionBSPTree2D.RegionNode2D> bSPTreePrinter0 = new BSPTreePrinter<Vector1D, RegionBSPTree2D.RegionNode2D>(134);
+26:       RegionBSPTree2D.RegionNode2D regionBSPTree2D_RegionNode2D0 = mock(RegionBSPTree2D.RegionNode2D.class, new ViolatedAssumptionAnswer());
+27:       RegionBSPTree2D.RegionNode2D regionBSPTree2D_RegionNode2D1 = mock(RegionBSPTree2D.RegionNode2D.class, new ViolatedAssumptionAnswer());
+28:       doReturn(134, 134).when(regionBSPTree2D_RegionNode2D1).depth();
+29:       doReturn(regionBSPTree2D_RegionNode2D0, regionBSPTree2D_RegionNode2D0).when(regionBSPTree2D_RegionNode2D1).getParent();
+30:       doReturn(true).when(regionBSPTree2D_RegionNode2D1).isMinus();
+31:       BSPTreeVisitor.Result bSPTreeVisitor_Result0 = bSPTreePrinter0.visit(regionBSPTree2D_RegionNode2D1);
+32:       assertEquals(BSPTreeVisitor.Result.CONTINUE, bSPTreeVisitor_Result0);
+33:   }
+34: }
+RegularFileObject[/tmp/EvoSuite_2_1619796494218/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_2_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:14 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class BSPTreePrinter_2_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+78:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+79:   }
+80: 
+81:   private static void initializeClasses() {
+82:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_2_tmp__ESTest_scaffolding.class.getClassLoader() ,
+83:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+84:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+85:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+86:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+87:       "org.apache.commons.geometry.euclidean.oned.Interval",
+88:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+89:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+91:       "org.apache.commons.geometry.core.Point",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+93:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+94:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+95:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+96:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+97:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+98:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+99:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+100:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+101:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+107:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+108:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+109:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+111:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+113:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+114:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+115:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+116:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+117:       "org.apache.commons.geometry.core.Spatial",
+118:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+119:       "org.apache.commons.geometry.core.Sized",
+120:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+121:       "org.apache.commons.geometry.spherical.twod.Point2S",
+122:       "org.apache.commons.geometry.core.partitioning.Splittable",
+123:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+124:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+126:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+128:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+129:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+131:       "org.apache.commons.geometry.core.Vector",
+132:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+134:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+136:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+137:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+138:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+139:       "org.apache.commons.geometry.core.RegionLocation",
+140:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+141:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+142:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+143:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+144:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+145:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+146:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+148:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+149:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+150:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+151:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+152:       "org.apache.commons.geometry.core.Region",
+153:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+154:       "org.apache.commons.geometry.spherical.oned.Point1S",
+155:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+156:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+157:     );
+158:   } 
+159:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+160:     mock(Class.forName("org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D", false, BSPTreePrinter_2_tmp__ESTest_scaffolding.class.getClassLoader()));
+161:   }
+162: 
+163:   private static void resetClasses() {
+164:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_2_tmp__ESTest_scaffolding.class.getClassLoader()); 
+165: 
+166:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+167:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+168:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+169:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+170:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+171:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+172:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+173:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+174:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+175:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+176:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+177:     );
+178:   }
+179: }
+
+[MASTER] 15:28:14.429 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Vector1D, RegionBSPTree2D.RegionNode2D> bSPTreePrinter0 = new BSPTreePrinter<Vector1D, RegionBSPTree2D.RegionNode2D>(134);
+RegionBSPTree2D.RegionNode2D regionBSPTree2D_RegionNode2D0 = mock(RegionBSPTree2D.RegionNode2D.class, new ViolatedAssumptionAnswer());
+RegionBSPTree2D.RegionNode2D regionBSPTree2D_RegionNode2D1 = mock(RegionBSPTree2D.RegionNode2D.class, new ViolatedAssumptionAnswer());
+doReturn(134, 134).when(regionBSPTree2D_RegionNode2D1).depth();
+doReturn(regionBSPTree2D_RegionNode2D0, regionBSPTree2D_RegionNode2D0).when(regionBSPTree2D_RegionNode2D1).getParent();
+doReturn(true).when(regionBSPTree2D_RegionNode2D1).isMinus();
+BSPTreeVisitor.Result bSPTreeVisitor_Result0 = bSPTreePrinter0.visit(regionBSPTree2D_RegionNode2D1);
+assertEquals(BSPTreeVisitor.Result.CONTINUE, bSPTreeVisitor_Result0);
+
+
+[MASTER] 15:28:14.552 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_3_1619796494432/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_3_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_3_1619796494432/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_3_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:14.552 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.552 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.552 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D.RegionNode1D is not within bounds of type-variable N: 25
+[MASTER] 15:28:14.552 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D.RegionNode1D is not within bounds of type-variable N: 25
+[MASTER] 15:28:14.553 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_3_1619796494432/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_3_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:14 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+12: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor;
+13: import org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D;
+14: import org.apache.commons.geometry.spherical.twod.Point2S;
+15: import org.evosuite.runtime.EvoRunner;
+16: import org.evosuite.runtime.EvoRunnerParameters;
+17: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+18: import org.junit.runner.RunWith;
+19: 
+20: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+21: public class BSPTreePrinter_3_tmp__ESTest extends BSPTreePrinter_3_tmp__ESTest_scaffolding {
+22: 
+23:   @Test(timeout = 4000)
+24:   public void test0()  throws Throwable  {
+25:       BSPTreePrinter<Point2S, RegionBSPTree1D.RegionNode1D> bSPTreePrinter0 = new BSPTreePrinter<Point2S, RegionBSPTree1D.RegionNode1D>((-2160));
+26:       RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D0 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+27:       doReturn(0).when(regionBSPTree1D_RegionNode1D0).depth();
+28:       BSPTreeVisitor.Result bSPTreeVisitor_Result0 = bSPTreePrinter0.visit(regionBSPTree1D_RegionNode1D0);
+29:       assertEquals(BSPTreeVisitor.Result.CONTINUE, bSPTreeVisitor_Result0);
+30:   }
+31: }
+RegularFileObject[/tmp/EvoSuite_3_1619796494432/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_3_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:14 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class BSPTreePrinter_3_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+78:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+79:   }
+80: 
+81:   private static void initializeClasses() {
+82:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_3_tmp__ESTest_scaffolding.class.getClassLoader() ,
+83:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+84:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+85:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+86:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+87:       "org.apache.commons.geometry.euclidean.oned.Interval",
+88:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+89:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+91:       "org.apache.commons.geometry.core.Point",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+93:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+94:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+95:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+96:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+97:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+98:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+99:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+100:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+101:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+107:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+108:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+109:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+111:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+113:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+114:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+115:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+116:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+117:       "org.apache.commons.geometry.core.Spatial",
+118:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+119:       "org.apache.commons.geometry.core.Sized",
+120:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+121:       "org.apache.commons.geometry.spherical.twod.Point2S",
+122:       "org.apache.commons.geometry.core.partitioning.Splittable",
+123:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+124:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+126:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+128:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+129:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+131:       "org.apache.commons.geometry.core.Vector",
+132:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+134:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+136:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+137:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+138:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+139:       "org.apache.commons.geometry.core.RegionLocation",
+140:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+141:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+142:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+143:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+144:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+145:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+146:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+148:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+149:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+150:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+151:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+152:       "org.apache.commons.geometry.core.Region",
+153:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+154:       "org.apache.commons.geometry.spherical.oned.Point1S",
+155:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+156:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+157:     );
+158:   } 
+159:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+160:     mock(Class.forName("org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D", false, BSPTreePrinter_3_tmp__ESTest_scaffolding.class.getClassLoader()));
+161:   }
+162: 
+163:   private static void resetClasses() {
+164:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_3_tmp__ESTest_scaffolding.class.getClassLoader()); 
+165: 
+166:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+167:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+168:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+169:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+170:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+171:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+172:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+173:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+174:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+175:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+176:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+177:     );
+178:   }
+179: }
+
+[MASTER] 15:28:14.554 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Point2S, RegionBSPTree1D.RegionNode1D> bSPTreePrinter0 = new BSPTreePrinter<Point2S, RegionBSPTree1D.RegionNode1D>((-2160));
+RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D0 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+doReturn(0).when(regionBSPTree1D_RegionNode1D0).depth();
+BSPTreeVisitor.Result bSPTreeVisitor_Result0 = bSPTreePrinter0.visit(regionBSPTree1D_RegionNode1D0);
+assertEquals(BSPTreeVisitor.Result.CONTINUE, bSPTreeVisitor_Result0);
+
+
+[MASTER] 15:28:14.653 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_4_1619796494556/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_4_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_4_1619796494556/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_4_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:14.662 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.662 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:14.663 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.spherical.twod.RegionBSPTree2S.RegionNode2S is not within bounds of type-variable N: 24
+[MASTER] 15:28:14.664 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.spherical.twod.RegionBSPTree2S.RegionNode2S is not within bounds of type-variable N: 24
+[MASTER] 15:28:14.667 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_4_1619796494556/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_4_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:14 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+12: import org.apache.commons.geometry.euclidean.twod.Vector2D;
+13: import org.apache.commons.geometry.spherical.twod.RegionBSPTree2S;
+14: import org.evosuite.runtime.EvoRunner;
+15: import org.evosuite.runtime.EvoRunnerParameters;
+16: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+17: import org.junit.runner.RunWith;
+18: 
+19: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+20: public class BSPTreePrinter_4_tmp__ESTest extends BSPTreePrinter_4_tmp__ESTest_scaffolding {
+21: 
+22:   @Test(timeout = 4000)
+23:   public void test0()  throws Throwable  {
+24:       BSPTreePrinter<Vector2D, RegionBSPTree2S.RegionNode2S> bSPTreePrinter0 = new BSPTreePrinter<Vector2D, RegionBSPTree2S.RegionNode2S>((-1));
+25:       RegionBSPTree2S.RegionNode2S regionBSPTree2S_RegionNode2S0 = mock(RegionBSPTree2S.RegionNode2S.class, new ViolatedAssumptionAnswer());
+26:       doReturn(0).when(regionBSPTree2S_RegionNode2S0).depth();
+27:       doReturn(false).when(regionBSPTree2S_RegionNode2S0).isPlus();
+28:       bSPTreePrinter0.visit(regionBSPTree2S_RegionNode2S0);
+29:       assertEquals("", bSPTreePrinter0.toString());
+30:   }
+31: }
+RegularFileObject[/tmp/EvoSuite_4_1619796494556/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_4_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:14 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class BSPTreePrinter_4_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+78:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+79:   }
+80: 
+81:   private static void initializeClasses() {
+82:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_4_tmp__ESTest_scaffolding.class.getClassLoader() ,
+83:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+84:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+85:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+86:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+87:       "org.apache.commons.geometry.euclidean.oned.Interval",
+88:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+89:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+91:       "org.apache.commons.geometry.core.Point",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+93:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+94:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+95:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+96:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+97:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+98:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+99:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+100:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+101:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+107:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+108:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+109:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+111:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+113:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+114:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+115:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+116:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+117:       "org.apache.commons.geometry.core.Spatial",
+118:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+119:       "org.apache.commons.geometry.core.Sized",
+120:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+121:       "org.apache.commons.geometry.spherical.twod.Point2S",
+122:       "org.apache.commons.geometry.core.partitioning.Splittable",
+123:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+124:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+126:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+128:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+129:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+131:       "org.apache.commons.geometry.core.Vector",
+132:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+134:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+136:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+137:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+138:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+139:       "org.apache.commons.geometry.core.RegionLocation",
+140:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+141:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+142:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+143:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+144:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+145:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+146:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+148:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+149:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+150:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+151:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+152:       "org.apache.commons.geometry.core.Region",
+153:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+154:       "org.apache.commons.geometry.spherical.oned.Point1S",
+155:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+156:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+157:     );
+158:   } 
+159:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+160:     mock(Class.forName("org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S", false, BSPTreePrinter_4_tmp__ESTest_scaffolding.class.getClassLoader()));
+161:   }
+162: 
+163:   private static void resetClasses() {
+164:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_4_tmp__ESTest_scaffolding.class.getClassLoader()); 
+165: 
+166:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+167:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+168:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+169:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+170:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+171:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+172:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+173:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+174:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+175:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+176:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+177:     );
+178:   }
+179: }
+
+[MASTER] 15:28:14.668 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Vector2D, RegionBSPTree2S.RegionNode2S> bSPTreePrinter0 = new BSPTreePrinter<Vector2D, RegionBSPTree2S.RegionNode2S>((-1));
+RegionBSPTree2S.RegionNode2S regionBSPTree2S_RegionNode2S0 = mock(RegionBSPTree2S.RegionNode2S.class, new ViolatedAssumptionAnswer());
+doReturn(0).when(regionBSPTree2S_RegionNode2S0).depth();
+doReturn(false).when(regionBSPTree2S_RegionNode2S0).isPlus();
+bSPTreePrinter0.visit(regionBSPTree2S_RegionNode2S0);
+assertEquals("", bSPTreePrinter0.toString());
+
+
+[MASTER] 15:28:15.100 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_6_1619796494950/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_6_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_6_1619796494950/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_6_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:15.100 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:15.100 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:15.100 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D.RegionNode2D is not within bounds of type-variable N: 25
+[MASTER] 15:28:15.101 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D.RegionNode2D is not within bounds of type-variable N: 25
+[MASTER] 15:28:15.101 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_6_1619796494950/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_6_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:14 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+12: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor;
+13: import org.apache.commons.geometry.euclidean.oned.Vector1D;
+14: import org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D;
+15: import org.evosuite.runtime.EvoRunner;
+16: import org.evosuite.runtime.EvoRunnerParameters;
+17: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+18: import org.junit.runner.RunWith;
+19: 
+20: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+21: public class BSPTreePrinter_6_tmp__ESTest extends BSPTreePrinter_6_tmp__ESTest_scaffolding {
+22: 
+23:   @Test(timeout = 4000)
+24:   public void test0()  throws Throwable  {
+25:       BSPTreePrinter<Vector1D, RegionBSPTree2D.RegionNode2D> bSPTreePrinter0 = new BSPTreePrinter<Vector1D, RegionBSPTree2D.RegionNode2D>(134);
+26:       RegionBSPTree2D.RegionNode2D regionBSPTree2D_RegionNode2D0 = mock(RegionBSPTree2D.RegionNode2D.class, new ViolatedAssumptionAnswer());
+27:       RegionBSPTree2D.RegionNode2D regionBSPTree2D_RegionNode2D1 = mock(RegionBSPTree2D.RegionNode2D.class, new ViolatedAssumptionAnswer());
+28:       doReturn(134, 134).when(regionBSPTree2D_RegionNode2D1).depth();
+29:       doReturn(regionBSPTree2D_RegionNode2D0, regionBSPTree2D_RegionNode2D0).when(regionBSPTree2D_RegionNode2D1).getParent();
+30:       doReturn(false).when(regionBSPTree2D_RegionNode2D1).isMinus();
+31:       BSPTreeVisitor.Result bSPTreeVisitor_Result0 = bSPTreePrinter0.visit(regionBSPTree2D_RegionNode2D1);
+32:       assertEquals(BSPTreeVisitor.Result.CONTINUE, bSPTreeVisitor_Result0);
+33:   }
+34: }
+RegularFileObject[/tmp/EvoSuite_6_1619796494950/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_6_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:14 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class BSPTreePrinter_6_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+78:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+79:   }
+80: 
+81:   private static void initializeClasses() {
+82:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_6_tmp__ESTest_scaffolding.class.getClassLoader() ,
+83:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+84:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+85:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+86:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+87:       "org.apache.commons.geometry.euclidean.oned.Interval",
+88:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+89:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+91:       "org.apache.commons.geometry.core.Point",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+93:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+94:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+95:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+96:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+97:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+98:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+99:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+100:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+101:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+107:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+108:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+109:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+111:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+113:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+114:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+115:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+116:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+117:       "org.apache.commons.geometry.core.Spatial",
+118:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+119:       "org.apache.commons.geometry.core.Sized",
+120:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+121:       "org.apache.commons.geometry.spherical.twod.Point2S",
+122:       "org.apache.commons.geometry.core.partitioning.Splittable",
+123:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+124:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+126:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+128:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+129:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+131:       "org.apache.commons.geometry.core.Vector",
+132:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+134:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+136:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+137:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+138:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+139:       "org.apache.commons.geometry.core.RegionLocation",
+140:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+141:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+142:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+143:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+144:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+145:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+146:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+148:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+149:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+150:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+151:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+152:       "org.apache.commons.geometry.core.Region",
+153:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+154:       "org.apache.commons.geometry.spherical.oned.Point1S",
+155:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+156:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+157:     );
+158:   } 
+159:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+160:     mock(Class.forName("org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D", false, BSPTreePrinter_6_tmp__ESTest_scaffolding.class.getClassLoader()));
+161:   }
+162: 
+163:   private static void resetClasses() {
+164:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_6_tmp__ESTest_scaffolding.class.getClassLoader()); 
+165: 
+166:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+167:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+168:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+169:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+170:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+171:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+172:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+173:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+174:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+175:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+176:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+177:     );
+178:   }
+179: }
+
+[MASTER] 15:28:15.102 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Vector1D, RegionBSPTree2D.RegionNode2D> bSPTreePrinter0 = new BSPTreePrinter<Vector1D, RegionBSPTree2D.RegionNode2D>(134);
+RegionBSPTree2D.RegionNode2D regionBSPTree2D_RegionNode2D0 = mock(RegionBSPTree2D.RegionNode2D.class, new ViolatedAssumptionAnswer());
+RegionBSPTree2D.RegionNode2D regionBSPTree2D_RegionNode2D1 = mock(RegionBSPTree2D.RegionNode2D.class, new ViolatedAssumptionAnswer());
+doReturn(134, 134).when(regionBSPTree2D_RegionNode2D1).depth();
+doReturn(regionBSPTree2D_RegionNode2D0, regionBSPTree2D_RegionNode2D0).when(regionBSPTree2D_RegionNode2D1).getParent();
+doReturn(false).when(regionBSPTree2D_RegionNode2D1).isMinus();
+BSPTreeVisitor.Result bSPTreeVisitor_Result0 = bSPTreePrinter0.visit(regionBSPTree2D_RegionNode2D1);
+assertEquals(BSPTreeVisitor.Result.CONTINUE, bSPTreeVisitor_Result0);
+
+
+[MASTER] 15:28:15.242 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_8_1619796495167/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_8_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_8_1619796495167/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_8_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:15.243 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:15.245 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:15.246 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D.RegionNode1D is not within bounds of type-variable N: 23
+[MASTER] 15:28:15.246 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D.RegionNode1D is not within bounds of type-variable N: 23
+[MASTER] 15:28:15.247 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_8_1619796495167/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_8_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:15 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.runtime.EvoAssertions.*;
+11: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+12: import org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D;
+13: import org.apache.commons.geometry.euclidean.twod.Vector2D;
+14: import org.evosuite.runtime.EvoRunner;
+15: import org.evosuite.runtime.EvoRunnerParameters;
+16: import org.junit.runner.RunWith;
+17: 
+18: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+19: public class BSPTreePrinter_8_tmp__ESTest extends BSPTreePrinter_8_tmp__ESTest_scaffolding {
+20: 
+21:   @Test(timeout = 4000)
+22:   public void test0()  throws Throwable  {
+23:       BSPTreePrinter<Vector2D, RegionBSPTree1D.RegionNode1D> bSPTreePrinter0 = new BSPTreePrinter<Vector2D, RegionBSPTree1D.RegionNode1D>(644);
+24:       // Undeclared exception!
+25:       try { 
+26:         bSPTreePrinter0.visitOrder((RegionBSPTree1D.RegionNode1D) null);
+27:         fail("Expecting exception: NullPointerException");
+28:       
+29:       } catch(NullPointerException e) {
+30:          //
+31:          // no message in exception (getMessage() returned null)
+32:          //
+33:          verifyException("org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter", e);
+34:       }
+35:   }
+36: }
+RegularFileObject[/tmp/EvoSuite_8_1619796495167/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_8_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:15 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class BSPTreePrinter_8_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+76:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+77:   }
+78: 
+79:   private static void initializeClasses() {
+80:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_8_tmp__ESTest_scaffolding.class.getClassLoader() ,
+81:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+82:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+83:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+84:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+85:       "org.apache.commons.geometry.euclidean.oned.Interval",
+86:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+87:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+88:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+89:       "org.apache.commons.geometry.core.Point",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+91:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+93:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+94:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+95:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+96:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+97:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+98:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+99:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+100:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+101:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+107:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+108:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+109:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+111:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+113:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+114:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+115:       "org.apache.commons.geometry.core.Spatial",
+116:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+117:       "org.apache.commons.geometry.core.Sized",
+118:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+119:       "org.apache.commons.geometry.spherical.twod.Point2S",
+120:       "org.apache.commons.geometry.core.partitioning.Splittable",
+121:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+122:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+123:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+124:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+126:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+128:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+129:       "org.apache.commons.geometry.core.Vector",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+131:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+132:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+134:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+136:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+137:       "org.apache.commons.geometry.core.RegionLocation",
+138:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+139:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+140:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+141:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+142:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+143:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+144:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+145:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+146:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+148:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+149:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+150:       "org.apache.commons.geometry.core.Region",
+151:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+152:       "org.apache.commons.geometry.spherical.oned.Point1S",
+153:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+154:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+155:     );
+156:   } 
+157: 
+158:   private static void resetClasses() {
+159:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_8_tmp__ESTest_scaffolding.class.getClassLoader()); 
+160: 
+161:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+162:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+163:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+164:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+165:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+166:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+167:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+168:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+169:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+170:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+171:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+172:     );
+173:   }
+174: }
+
+[MASTER] 15:28:15.248 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Vector2D, RegionBSPTree1D.RegionNode1D> bSPTreePrinter0 = new BSPTreePrinter<Vector2D, RegionBSPTree1D.RegionNode1D>(644);
+bSPTreePrinter0.visitOrder((RegionBSPTree1D.RegionNode1D) null);
+
+[MASTER] 15:28:15.502 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_9_1619796495251/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_9_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_9_1619796495251/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_9_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:15.503 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:15.504 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:15.504 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.spherical.twod.RegionBSPTree2S.RegionNode2S is not within bounds of type-variable N: 25
+[MASTER] 15:28:15.505 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.spherical.twod.RegionBSPTree2S.RegionNode2S is not within bounds of type-variable N: 25
+[MASTER] 15:28:15.505 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_9_1619796495251/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_9_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:15 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree;
+12: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+13: import org.apache.commons.geometry.euclidean.twod.Vector2D;
+14: import org.apache.commons.geometry.spherical.twod.RegionBSPTree2S;
+15: import org.evosuite.runtime.EvoRunner;
+16: import org.evosuite.runtime.EvoRunnerParameters;
+17: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+18: import org.junit.runner.RunWith;
+19: 
+20: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+21: public class BSPTreePrinter_9_tmp__ESTest extends BSPTreePrinter_9_tmp__ESTest_scaffolding {
+22: 
+23:   @Test(timeout = 4000)
+24:   public void test0()  throws Throwable  {
+25:       BSPTreePrinter<Vector2D, RegionBSPTree2S.RegionNode2S> bSPTreePrinter0 = new BSPTreePrinter<Vector2D, RegionBSPTree2S.RegionNode2S>(0);
+26:       RegionBSPTree2S.RegionNode2S regionBSPTree2S_RegionNode2S0 = mock(RegionBSPTree2S.RegionNode2S.class, new ViolatedAssumptionAnswer());
+27:       doReturn(0, 0).when(regionBSPTree2S_RegionNode2S0).depth();
+28:       doReturn((AbstractBSPTree.AbstractNode) null, (AbstractBSPTree.AbstractNode) null).when(regionBSPTree2S_RegionNode2S0).getParent();
+29:       bSPTreePrinter0.visit(regionBSPTree2S_RegionNode2S0);
+30:       String string0 = bSPTreePrinter0.toString();
+31:       assertNotNull(string0);
+32:   }
+33: }
+RegularFileObject[/tmp/EvoSuite_9_1619796495251/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_9_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:15 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class BSPTreePrinter_9_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+78:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+79:   }
+80: 
+81:   private static void initializeClasses() {
+82:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_9_tmp__ESTest_scaffolding.class.getClassLoader() ,
+83:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+84:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+85:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+86:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+87:       "org.apache.commons.geometry.euclidean.oned.Interval",
+88:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+89:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+91:       "org.apache.commons.geometry.core.Point",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+93:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+94:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+95:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+96:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+97:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+98:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+99:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+100:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+101:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+107:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+108:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+109:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+111:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+113:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+114:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+115:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+116:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+117:       "org.apache.commons.geometry.core.Spatial",
+118:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+119:       "org.apache.commons.geometry.core.Sized",
+120:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+121:       "org.apache.commons.geometry.spherical.twod.Point2S",
+122:       "org.apache.commons.geometry.core.partitioning.Splittable",
+123:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+124:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+126:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+128:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+129:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+131:       "org.apache.commons.geometry.core.Vector",
+132:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+134:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+136:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+137:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+138:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+139:       "org.apache.commons.geometry.core.RegionLocation",
+140:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+141:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+142:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+143:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+144:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+145:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+146:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+148:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+149:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+150:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+151:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+152:       "org.apache.commons.geometry.core.Region",
+153:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+154:       "org.apache.commons.geometry.spherical.oned.Point1S",
+155:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+156:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+157:     );
+158:   } 
+159:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+160:     mock(Class.forName("org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S", false, BSPTreePrinter_9_tmp__ESTest_scaffolding.class.getClassLoader()));
+161:   }
+162: 
+163:   private static void resetClasses() {
+164:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_9_tmp__ESTest_scaffolding.class.getClassLoader()); 
+165: 
+166:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+167:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+168:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+169:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+170:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+171:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+172:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+173:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+174:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+175:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+176:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+177:     );
+178:   }
+179: }
+
+[MASTER] 15:28:15.506 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Vector2D, RegionBSPTree2S.RegionNode2S> bSPTreePrinter0 = new BSPTreePrinter<Vector2D, RegionBSPTree2S.RegionNode2S>(0);
+RegionBSPTree2S.RegionNode2S regionBSPTree2S_RegionNode2S0 = mock(RegionBSPTree2S.RegionNode2S.class, new ViolatedAssumptionAnswer());
+doReturn(0, 0).when(regionBSPTree2S_RegionNode2S0).depth();
+doReturn((AbstractBSPTree.AbstractNode) null, (AbstractBSPTree.AbstractNode) null).when(regionBSPTree2S_RegionNode2S0).getParent();
+bSPTreePrinter0.visit(regionBSPTree2S_RegionNode2S0);
+String string0 = bSPTreePrinter0.toString();
+assertNotNull(string0);
+
+
+[MASTER] 15:28:15.602 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_10_1619796495510/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_10_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_10_1619796495510/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_10_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:28:15.603 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Geometry/commons-geometry-core-1.0-beta1.jar:projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:projects/Geometry/commons-geometry-hull-1.0-beta1.jar:projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:15.603 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Geometry/commons-geometry-core-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-enclosing-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-spherical-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-hull-1.0-beta1.jar:/evosuite/projects/Geometry/commons-geometry-euclidean-1.0-beta1.jar
+[MASTER] 15:28:15.604 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D.RegionNode1D is not within bounds of type-variable N: 31
+[MASTER] 15:28:15.604 [logback-2] ERROR JUnitAnalyzer - Diagnostic: type argument org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D.RegionNode1D is not within bounds of type-variable N: 31
+[MASTER] 15:28:15.606 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_10_1619796495510/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_10_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:28:15 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.geometry.core.partitioning.bsp;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree;
+12: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter;
+13: import org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor;
+14: import org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D;
+15: import org.apache.commons.geometry.euclidean.oned.Vector1D;
+16: import org.apache.commons.geometry.euclidean.threed.Vector3D;
+17: import org.evosuite.runtime.EvoRunner;
+18: import org.evosuite.runtime.EvoRunnerParameters;
+19: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+20: import org.junit.runner.RunWith;
+21: 
+22: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+23: public class BSPTreePrinter_10_tmp__ESTest extends BSPTreePrinter_10_tmp__ESTest_scaffolding {
+24: 
+25:   @Test(timeout = 4000)
+26:   public void test0()  throws Throwable  {
+27:       BSPTreePrinter<Vector1D, RegionBSPTree1D.RegionNode1D> bSPTreePrinter0 = new BSPTreePrinter<Vector1D, RegionBSPTree1D.RegionNode1D>(626);
+28:       RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D0 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+29:       doReturn(626).when(regionBSPTree1D_RegionNode1D0).depth();
+30:       bSPTreePrinter0.visitOrder(regionBSPTree1D_RegionNode1D0);
+31:       BSPTreePrinter<Vector3D, RegionBSPTree1D.RegionNode1D> bSPTreePrinter1 = new BSPTreePrinter<Vector3D, RegionBSPTree1D.RegionNode1D>((-1482));
+32:       RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D1 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+33:       doReturn(626).when(regionBSPTree1D_RegionNode1D1).depth();
+34:       bSPTreePrinter1.visitOrder(regionBSPTree1D_RegionNode1D1);
+35:       RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D2 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+36:       doReturn((-1971), 0).when(regionBSPTree1D_RegionNode1D2).depth();
+37:       doReturn((AbstractBSPTree.AbstractNode) null, (AbstractBSPTree.AbstractNode) null).when(regionBSPTree1D_RegionNode1D2).getParent();
+38:       BSPTreeVisitor.Result bSPTreeVisitor_Result0 = bSPTreePrinter1.visit(regionBSPTree1D_RegionNode1D2);
+39:       assertEquals(BSPTreeVisitor.Result.CONTINUE, bSPTreeVisitor_Result0);
+40:   }
+41: }
+RegularFileObject[/tmp/EvoSuite_10_1619796495510/org/apache/commons/geometry/core/partitioning/bsp/BSPTreePrinter_10_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:28:15 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.geometry.core.partitioning.bsp;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class BSPTreePrinter_10_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+78:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+79:   }
+80: 
+81:   private static void initializeClasses() {
+82:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(BSPTreePrinter_10_tmp__ESTest_scaffolding.class.getClassLoader() ,
+83:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$ClosestFirstVisitor",
+84:       "org.apache.commons.geometry.spherical.twod.ConvexArea2S",
+85:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+86:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryPair",
+87:       "org.apache.commons.geometry.euclidean.oned.Interval",
+88:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$LinecastVisitor",
+89:       "org.apache.commons.geometry.euclidean.twod.Vector2D",
+90:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionBoundaryIterator",
+91:       "org.apache.commons.geometry.core.Point",
+92:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$IntersectionOperator",
+93:       "org.apache.commons.geometry.euclidean.twod.BoundarySource2D",
+94:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTreeMergeOperator",
+95:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree",
+96:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$1",
+97:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$BoundaryProjector2S",
+98:       "org.apache.commons.geometry.core.partitioning.AbstractConvexHyperplaneBoundedRegion",
+99:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+100:       "org.apache.commons.geometry.euclidean.MultiDimensionalEuclideanVector",
+101:       "org.apache.commons.geometry.euclidean.threed.Vector3D",
+102:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionMergeOperator",
+103:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+104:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractPartitionedRegionBuilder",
+105:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$FarthestFirstVisitor",
+106:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree$Node",
+107:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$TargetPointVisitor",
+108:       "org.apache.commons.geometry.core.partitioning.HyperplaneBoundedRegion",
+109:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+110:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$RegionSizeProperties",
+111:       "org.apache.commons.geometry.core.partitioning.HyperplaneSubset",
+112:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutBoundary",
+113:       "org.apache.commons.geometry.spherical.twod.BoundarySource2S",
+114:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+115:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$BoundaryProjector",
+116:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S",
+117:       "org.apache.commons.geometry.core.Spatial",
+118:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D",
+119:       "org.apache.commons.geometry.core.Sized",
+120:       "org.apache.commons.geometry.core.partitioning.Hyperplane",
+121:       "org.apache.commons.geometry.spherical.twod.Point2S",
+122:       "org.apache.commons.geometry.core.partitioning.Splittable",
+123:       "org.apache.commons.geometry.core.partitioning.AbstractHyperplane",
+124:       "org.apache.commons.geometry.core.partitioning.BoundarySource",
+125:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$XorOperator",
+126:       "org.apache.commons.geometry.euclidean.oned.Vector1D",
+127:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$NodeIterator",
+128:       "org.apache.commons.geometry.euclidean.oned.OrientedPoint",
+129:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor",
+130:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$UnionOperator",
+131:       "org.apache.commons.geometry.core.Vector",
+132:       "org.apache.commons.geometry.core.partitioning.bsp.RegionCutRule",
+133:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree",
+134:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$1",
+135:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+136:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D",
+137:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+138:       "org.apache.commons.geometry.core.internal.IteratorTransform",
+139:       "org.apache.commons.geometry.core.RegionLocation",
+140:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$1",
+141:       "org.apache.commons.geometry.core.partitioning.HyperplaneConvexSubset",
+142:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$Condenser",
+143:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTree",
+144:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$PartitionedRegionBuilder2D",
+145:       "org.apache.commons.geometry.euclidean.EuclideanVector",
+146:       "org.apache.commons.geometry.core.partitioning.bsp.BSPSubtree",
+147:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$BoundaryProjector1D",
+148:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionSizePropertiesVisitor",
+149:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$NodeRegionVisitor",
+150:       "org.apache.commons.geometry.euclidean.twod.ConvexArea",
+151:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+152:       "org.apache.commons.geometry.core.Region",
+153:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$DifferenceOperator",
+154:       "org.apache.commons.geometry.spherical.oned.Point1S",
+155:       "org.apache.commons.geometry.euclidean.twod.Linecastable2D",
+156:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$BoundaryProjector2D"
+157:     );
+158:   } 
+159:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+160:     mock(Class.forName("org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D", false, BSPTreePrinter_10_tmp__ESTest_scaffolding.class.getClassLoader()));
+161:   }
+162: 
+163:   private static void resetClasses() {
+164:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(BSPTreePrinter_10_tmp__ESTest_scaffolding.class.getClassLoader()); 
+165: 
+166:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+167:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter",
+168:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Result",
+169:       "org.apache.commons.geometry.core.partitioning.bsp.BSPTreeVisitor$Order",
+170:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractBSPTree$AbstractNode",
+171:       "org.apache.commons.geometry.core.partitioning.bsp.AbstractRegionBSPTree$AbstractRegionNode",
+172:       "org.apache.commons.geometry.spherical.twod.RegionBSPTree2S$RegionNode2S",
+173:       "org.apache.commons.geometry.euclidean.twod.RegionBSPTree2D$RegionNode2D",
+174:       "org.apache.commons.geometry.euclidean.threed.RegionBSPTree3D$RegionNode3D",
+175:       "org.apache.commons.geometry.euclidean.oned.RegionBSPTree1D$RegionNode1D",
+176:       "org.apache.commons.geometry.spherical.oned.RegionBSPTree1S$RegionNode1S"
+177:     );
+178:   }
+179: }
+
+[MASTER] 15:28:15.607 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+BSPTreePrinter<Vector1D, RegionBSPTree1D.RegionNode1D> bSPTreePrinter0 = new BSPTreePrinter<Vector1D, RegionBSPTree1D.RegionNode1D>(626);
+RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D0 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+doReturn(626).when(regionBSPTree1D_RegionNode1D0).depth();
+bSPTreePrinter0.visitOrder(regionBSPTree1D_RegionNode1D0);
+BSPTreePrinter<Vector3D, RegionBSPTree1D.RegionNode1D> bSPTreePrinter1 = new BSPTreePrinter<Vector3D, RegionBSPTree1D.RegionNode1D>((-1482));
+RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D1 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+doReturn(626).when(regionBSPTree1D_RegionNode1D1).depth();
+bSPTreePrinter1.visitOrder(regionBSPTree1D_RegionNode1D1);
+RegionBSPTree1D.RegionNode1D regionBSPTree1D_RegionNode1D2 = mock(RegionBSPTree1D.RegionNode1D.class, new ViolatedAssumptionAnswer());
+doReturn((-1971), 0).when(regionBSPTree1D_RegionNode1D2).depth();
+doReturn((AbstractBSPTree.AbstractNode) null, (AbstractBSPTree.AbstractNode) null).when(regionBSPTree1D_RegionNode1D2).getParent();
+BSPTreeVisitor.Result bSPTreeVisitor_Result0 = bSPTreePrinter1.visit(regionBSPTree1D_RegionNode1D2);
+assertEquals(BSPTreeVisitor.Result.CONTINUE, bSPTreeVisitor_Result0);
+
+
+[MASTER] 15:28:16.059 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: /usr/local/openjdk-8/jre/lib/amd64/libfontmanager.so: libfreetype.so.6: cannot open shared object file: No such file or directory
+Stack trace:
+java.lang.ClassLoader$NativeLibrary.load(Native Method)
+java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1934)
+java.lang.ClassLoader.loadLibrary(ClassLoader.java:1838)
+java.lang.Runtime.loadLibrary0(Runtime.java:871)
+java.lang.System.loadLibrary(System.java:1124)
+sun.font.FontManagerNativeLibrary$1.run(FontManagerNativeLibrary.java:61)
+java.security.AccessController.doPrivileged(Native Method)
+sun.font.FontManagerNativeLibrary.<clinit>(FontManagerNativeLibrary.java:32)
+sun.font.SunFontManager$1.run(SunFontManager.java:346)
+java.security.AccessController.doPrivileged(Native Method)
+sun.font.SunFontManager.<clinit>(SunFontManager.java:342)
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter_11_tmp__ESTest_scaffolding.initEvoSuiteFramework(BSPTreePrinter_11_tmp__ESTest_scaffolding.java:32)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 15:28:16.187 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: Could not initialize class sun.font.SunFontManager
+Stack trace:
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter_12_tmp__ESTest_scaffolding.initEvoSuiteFramework(BSPTreePrinter_12_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+* Writing tests to file
+* Writing JUnit test case 'BSPTreePrinter_ESTest' to results/default_120/Geometry/org_apache_commons_geometry_core_partitioning_bsp_BSPTreePrinter/tests/8
+* Done!
+
+* Computation finished

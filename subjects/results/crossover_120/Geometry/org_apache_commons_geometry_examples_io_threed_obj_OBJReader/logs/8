@@ -1,0 +1,4 @@
+* EvoSuite 1.1.0
+* Configuration: crossover_120
+* Going to generate test cases for class: org.apache.commons.geometry.examples.io.threed.obj.OBJReader
+* Unknown class: org.apache.commons.geometry.examples.io.threed.obj.OBJReader. Be sure its full qualifying name  is correct and the classpath is properly set with '-projectCP'

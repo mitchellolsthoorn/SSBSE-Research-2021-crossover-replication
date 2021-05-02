@@ -1,0 +1,77 @@
+* EvoSuite 1.1.0
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.lang3.ArrayUtils
+* Starting Client-0
+* Connecting to master process on port 15291
+* Analyzing classpath: 
+  - projects/Lang/commons-lang3-3.12.0.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.ArrayUtils
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 15:19:46.368 [logback-2] ERROR AbstractMOSA - I am OFF
+* Total number of test goals for DYNAMOSA: 8739
+* Using seed 4189143789
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 2360 / 8739
+[MASTER] 15:19:47.476 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 15:19:47.501 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 15:20:45.706 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 125s and 54 generations, 68922 statements, best individual has fitness: 1219.0
+[MASTER] 15:22:08.068 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 21 seconds more than allowed.
+* Minimizing test suite
+[MASTER] 15:24:12.893 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 2107
+* Number of covered goals: 2006
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 91%
+* Total number of goals: 1640
+* Number of covered goals: 1486
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 70
+* Number of covered goals: 70
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 82%
+* Total number of goals: 1654
+* Number of covered goals: 1363
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 65%
+* Total number of goals: 982
+* Number of covered goals: 642
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 99%
+* Total number of goals: 358
+* Number of covered goals: 355
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 358
+* Number of covered goals: 342
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 84%
+* Total number of goals: 1640
+* Number of covered goals: 1378
+* Generated 1118 tests with total length 19971
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 15:26:40.680 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6774833333333333% of time used, but only 44/1118 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 8%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing tests to file
+* Writing JUnit test case 'ArrayUtils_ESTest' to results/default_120/Lang/org_apache_commons_lang3_ArrayUtils/tests/7
+* Done!
+
+* Computation finished

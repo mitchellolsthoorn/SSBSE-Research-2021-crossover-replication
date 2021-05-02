@@ -1,0 +1,26 @@
+* EvoSuite 1.1.0
+* Configuration: crossover_120
+* Going to generate test cases for class: org.apache.commons.text.AlphabetConverter
+* Starting Client-0
+* Connecting to master process on port 2605
+* Analyzing classpath: 
+  - projects/Text/commons-text-1.9.jar
+* Error while initializing target class: java.lang.NullPointerException
+[MASTER] 15:07:56.501 [logback-2] ERROR TestSuiteGenerator - Problem for org.apache.commons.text.AlphabetConverter. Full stack:
+java.lang.NullPointerException: null
+	at org.evosuite.setup.PutStaticMethodCollector.collectMethods(PutStaticMethodCollector.java:144)
+	at org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:663)
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:133)
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:121)
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:137)
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:111)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:132)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+* Computation finished
+[MASTER] 15:07:56.690 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case
+[MASTER] 15:07:56.791 [main] ERROR TestGeneration - failed to write statistics data

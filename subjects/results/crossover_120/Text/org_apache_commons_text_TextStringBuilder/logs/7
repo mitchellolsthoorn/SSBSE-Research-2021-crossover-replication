@@ -1,0 +1,29 @@
+* EvoSuite 1.1.0
+* Configuration: crossover_120
+* Going to generate test cases for class: org.apache.commons.text.TextStringBuilder
+* Starting Client-0
+* Connecting to master process on port 19441
+* Analyzing classpath: 
+  - projects/Text/commons-text-1.9.jar
+[MASTER] 15:20:21.664 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.lang3.StringUtils was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 15:20:21.665 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.commons.lang3.StringUtils
+[MASTER] 15:20:22.493 [logback-1] WARN  CheapPurityAnalyzer - org.apache.commons.lang3.StringUtils was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+* Error while initializing target class: java.lang.NullPointerException
+[MASTER] 15:20:22.515 [logback-2] ERROR TestSuiteGenerator - Problem for org.apache.commons.text.TextStringBuilder. Full stack:
+java.lang.NullPointerException: null
+	at org.evosuite.setup.PutStaticMethodCollector.collectMethods(PutStaticMethodCollector.java:144)
+	at org.evosuite.setup.TestClusterGenerator.initializeTargetMethods(TestClusterGenerator.java:663)
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:133)
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:121)
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:137)
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:111)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:132)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+* Computation finished
+[MASTER] 15:20:22.869 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case
+[MASTER] 15:20:22.970 [main] ERROR TestGeneration - failed to write statistics data

@@ -1,0 +1,414 @@
+* EvoSuite 1.1.0
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.lang3.ArrayUtils
+* Starting Client-0
+* Connecting to master process on port 10951
+* Analyzing classpath: 
+  - projects/Lang/commons-lang3-3.12.0.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.ArrayUtils
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 15:24:55.618 [logback-2] ERROR AbstractMOSA - I am OFF
+* Total number of test goals for DYNAMOSA: 8739
+* Using seed 1081622054
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 2360 / 8739
+[MASTER] 15:24:56.700 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 15:24:56.709 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 15:25:25.514 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 126s and 59 generations, 75641 statements, best individual has fitness: 1092.0
+[MASTER] 15:27:17.860 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 21 seconds more than allowed.
+* Minimizing test suite
+[MASTER] 15:29:22.694 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 96%
+* Total number of goals: 2107
+* Number of covered goals: 2023
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 93%
+* Total number of goals: 1640
+* Number of covered goals: 1520
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 64
+* Number of covered goals: 64
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 84%
+* Total number of goals: 1654
+* Number of covered goals: 1387
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 66%
+* Total number of goals: 982
+* Number of covered goals: 648
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 358
+* Number of covered goals: 357
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 97%
+* Total number of goals: 358
+* Number of covered goals: 346
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 86%
+* Total number of goals: 1640
+* Number of covered goals: 1417
+* Generated 1205 tests with total length 20454
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 15:31:52.398 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6798916666666667% of time used, but only 97/1205 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 13%
+* Compiling and checking tests
+[MASTER] 15:33:16.852 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_960_1619796796813/org/apache/commons/lang3/ArrayUtils_960_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_960_1619796796813/org/apache/commons/lang3/ArrayUtils_960_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:33:16.852 [logback-2] ERROR JUnitAnalyzer - Classpath: projects/Lang/commons-lang3-3.12.0.jar:/evosuite-bin/evosuite.jar:/evosuite/projects/Lang/commons-lang3-3.12.0.jar
+[MASTER] 15:33:16.852 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /evosuite-bin/evosuite.jar:/evosuite/projects/Lang/commons-lang3-3.12.0.jar
+[MASTER] 15:33:16.856 [logback-2] ERROR JUnitAnalyzer - Diagnostic: incompatible types: java.util.Comparator<java.util.Map.Entry<java.lang.Object,java.lang.Long>> cannot be converted to java.util.Comparator<java.util.Map.Entry<java.lang.Double,java.lang.Long>>: 66
+[MASTER] 15:33:16.856 [logback-2] ERROR JUnitAnalyzer - Diagnostic: /tmp/EvoSuite_960_1619796796813/org/apache/commons/lang3/ArrayUtils_960_tmp__ESTest.java uses or overrides a deprecated API.: -1
+[MASTER] 15:33:16.856 [logback-2] ERROR JUnitAnalyzer - Diagnostic: Recompile with -Xlint:deprecation for details.: -1
+[MASTER] 15:33:16.856 [logback-2] ERROR JUnitAnalyzer - Diagnostic: /tmp/EvoSuite_960_1619796796813/org/apache/commons/lang3/ArrayUtils_960_tmp__ESTest.java uses unchecked or unsafe operations.: -1
+[MASTER] 15:33:16.856 [logback-2] ERROR JUnitAnalyzer - Diagnostic: Recompile with -Xlint:unchecked for details.: -1
+[MASTER] 15:33:16.857 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_960_1619796796813/org/apache/commons/lang3/ArrayUtils_960_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Apr 30 15:33:16 GMT 2021
+4:  */
+5: 
+6: package org.apache.commons.lang3;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import java.util.AbstractMap;
+12: import java.util.Comparator;
+13: import java.util.Map;
+14: import org.apache.commons.lang3.ArrayUtils;
+15: import org.evosuite.runtime.EvoRunner;
+16: import org.evosuite.runtime.EvoRunnerParameters;
+17: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+18: import org.junit.runner.RunWith;
+19: 
+20: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+21: public class ArrayUtils_960_tmp__ESTest extends ArrayUtils_960_tmp__ESTest_scaffolding {
+22: 
+23:   @Test(timeout = 4000)
+24:   public void test0()  throws Throwable  {
+25:       double[] doubleArray0 = new double[3];
+26:       doubleArray0[2] = (-2101.5);
+27:       doubleArray0[2] = 2063.283;
+28:       int int0 = ArrayUtils.indexOf(doubleArray0, 0.0, 0);
+29:       assertArrayEquals(new double[] {0.0, 0.0, 2063.283}, doubleArray0, 0.01);
+30:       assertEquals(3, doubleArray0.length);
+31:       assertEquals(0, int0);
+32:       
+33:       double[] doubleArray1 = ArrayUtils.add(doubleArray0, 0, 1.0);
+34:       assertArrayEquals(new double[] {0.0, 0.0, 2063.283}, doubleArray0, 0.01);
+35:       assertArrayEquals(new double[] {1.0, 0.0, 0.0, 2063.283}, doubleArray1, 0.01);
+36:       assertEquals(3, doubleArray0.length);
+37:       assertEquals(4, doubleArray1.length);
+38:       assertFalse(doubleArray1.equals((Object)doubleArray0));
+39:       assertNotSame(doubleArray0, doubleArray1);
+40:       assertNotSame(doubleArray1, doubleArray0);
+41:       assertNotNull(doubleArray1);
+42:       
+43:       float[] floatArray0 = new float[5];
+44:       floatArray0[0] = (float) 0;
+45:       floatArray0[1] = (float) 0;
+46:       Double double0 = new Double(0);
+47:       assertNotNull(double0);
+48:       assertEquals(0.0, (double)double0, 0.01);
+49:       
+50:       Double double1 = new Double(1.0);
+51:       assertNotEquals((double)double1, (double)double0, 0.01);
+52:       assertNotNull(double1);
+53:       assertEquals(1.0, (double)double1, 0.01);
+54:       
+55:       AbstractMap.SimpleImmutableEntry<Double, Double> abstractMap_SimpleImmutableEntry0 = new AbstractMap.SimpleImmutableEntry<Double, Double>(double0, double1);
+56:       assertNotEquals((double)double0, (double)double1, 0.01);
+57:       assertNotEquals((double)double1, (double)double0, 0.01);
+58:       assertNotNull(abstractMap_SimpleImmutableEntry0);
+59:       
+60:       AbstractMap.SimpleEntry<Double, Double> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<Double, Double>(abstractMap_SimpleImmutableEntry0);
+61:       assertNotEquals((double)double0, (double)double1, 0.01);
+62:       assertNotEquals((double)double1, (double)double0, 0.01);
+63:       assertNotNull(abstractMap_SimpleEntry0);
+64:       
+65:       Comparator<Object> comparator0 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+66:       Comparator<Map.Entry<Double, Long>> comparator1 = (Comparator<Map.Entry<Double, Long>>)Map.Entry.comparingByValue((Comparator<? super Long>) comparator0);
+67:       assertNotNull(comparator1);
+68:       
+69:       AbstractMap.SimpleImmutableEntry<Double, Double> abstractMap_SimpleImmutableEntry1 = new AbstractMap.SimpleImmutableEntry<Double, Double>(abstractMap_SimpleEntry0);
+70:       assertNotEquals((double)double0, (double)double1, 0.01);
+71:       assertNotEquals((double)double1, (double)double0, 0.01);
+72:       assertNotNull(abstractMap_SimpleImmutableEntry1);
+73:       
+74:       AbstractMap.SimpleImmutableEntry<Double, Double> abstractMap_SimpleImmutableEntry2 = new AbstractMap.SimpleImmutableEntry<Double, Double>(abstractMap_SimpleImmutableEntry1);
+75:       assertNotEquals((double)double0, (double)double1, 0.01);
+76:       assertNotEquals((double)double1, (double)double0, 0.01);
+77:       assertNotNull(abstractMap_SimpleImmutableEntry2);
+78:       
+79:       Double double2 = new Double(4673.91493);
+80:       assertNotEquals((double)double2, (double)double0, 0.01);
+81:       assertNotEquals((double)double2, (double)double1, 0.01);
+82:       assertNotNull(double2);
+83:       assertEquals(4673.91493, (double)double2, 0.01);
+84:       
+85:       Double double3 = new Double(0);
+86:       assertNotEquals((double)double3, (double)double2, 0.01);
+87:       assertNotEquals((double)double3, (double)double1, 0.01);
+88:       assertEquals((double)double3, (double)double0, 0.01);
+89:       assertNotNull(double3);
+90:       assertEquals(0.0, (double)double3, 0.01);
+91:       
+92:       AbstractMap.SimpleImmutableEntry<Double, Double> abstractMap_SimpleImmutableEntry3 = new AbstractMap.SimpleImmutableEntry<Double, Double>(double3, double2);
+93:       assertNotEquals((double)double2, (double)double0, 0.01);
+94:       assertNotEquals((double)double2, (double)double1, 0.01);
+95:       assertNotEquals((double)double2, (double)double3, 0.01);
+96:       assertNotEquals((double)double3, (double)double2, 0.01);
+97:       assertNotEquals((double)double3, (double)double1, 0.01);
+98:       assertEquals((double)double3, (double)double0, 0.01);
+99:       assertFalse(abstractMap_SimpleImmutableEntry3.equals((Object)abstractMap_SimpleImmutableEntry2));
+100:       assertNotNull(abstractMap_SimpleImmutableEntry3);
+101:       
+102:       Comparator<AbstractMap.SimpleImmutableEntry<Double, Double>> comparator2 = (Comparator<AbstractMap.SimpleImmutableEntry<Double, Double>>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+103:       boolean boolean0 = ArrayUtils.isSorted((AbstractMap.SimpleImmutableEntry<Double, Double>[]) null, comparator2);
+104:       assertTrue(boolean0);
+105:   }
+106: }
+RegularFileObject[/tmp/EvoSuite_960_1619796796813/org/apache/commons/lang3/ArrayUtils_960_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Apr 30 15:33:16 GMT 2021
+5:  */
+6: 
+7: package org.apache.commons.lang3;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class ArrayUtils_960_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.apache.commons.lang3.ArrayUtils"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("user.dir", "/evosuite"); 
+78:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+79:   }
+80: 
+81:   private static void initializeClasses() {
+82:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(ArrayUtils_960_tmp__ESTest_scaffolding.class.getClassLoader() ,
+83:       "org.apache.commons.lang3.mutable.MutableInt",
+84:       "org.apache.commons.lang3.builder.ToStringStyle",
+85:       "org.apache.commons.lang3.ArraySorter",
+86:       "org.apache.commons.lang3.ArrayUtils",
+87:       "org.apache.commons.lang3.BooleanUtils",
+88:       "org.apache.commons.lang3.StringUtils",
+89:       "org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle",
+90:       "org.apache.commons.lang3.CharSequenceUtils",
+91:       "org.apache.commons.lang3.CharUtils",
+92:       "org.apache.commons.lang3.ClassUtils",
+93:       "org.apache.commons.lang3.builder.ToStringStyle$NoClassNameToStringStyle",
+94:       "org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle",
+95:       "org.apache.commons.lang3.builder.ToStringBuilder",
+96:       "org.apache.commons.lang3.mutable.Mutable",
+97:       "org.apache.commons.lang3.math.NumberUtils",
+98:       "org.apache.commons.lang3.builder.Builder",
+99:       "org.apache.commons.lang3.builder.ToStringStyle$JsonToStringStyle",
+100:       "org.apache.commons.lang3.builder.HashCodeBuilder",
+101:       "org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle",
+102:       "org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle",
+103:       "org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle",
+104:       "org.apache.commons.lang3.builder.EqualsBuilder"
+105:     );
+106:   } 
+107:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+108:     mock(Class.forName("java.util.Comparator", false, ArrayUtils_960_tmp__ESTest_scaffolding.class.getClassLoader()));
+109:   }
+110: 
+111:   private static void resetClasses() {
+112:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(ArrayUtils_960_tmp__ESTest_scaffolding.class.getClassLoader()); 
+113: 
+114:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+115:       "org.apache.commons.lang3.ArrayUtils",
+116:       "org.apache.commons.lang3.CharUtils",
+117:       "org.apache.commons.lang3.ClassUtils",
+118:       "org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle",
+119:       "org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle",
+120:       "org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle",
+121:       "org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle",
+122:       "org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle",
+123:       "org.apache.commons.lang3.builder.ToStringStyle$NoClassNameToStringStyle",
+124:       "org.apache.commons.lang3.builder.ToStringStyle$JsonToStringStyle",
+125:       "org.apache.commons.lang3.builder.ToStringStyle",
+126:       "org.apache.commons.lang3.math.NumberUtils",
+127:       "org.apache.commons.lang3.mutable.MutableInt",
+128:       "org.apache.commons.lang3.builder.ToStringBuilder",
+129:       "org.apache.commons.lang3.StringUtils",
+130:       "org.apache.commons.lang3.CharSequenceUtils",
+131:       "org.apache.commons.lang3.ArraySorter",
+132:       "org.apache.commons.lang3.builder.EqualsBuilder",
+133:       "org.apache.commons.lang3.builder.HashCodeBuilder",
+134:       "org.apache.commons.lang3.BooleanUtils"
+135:     );
+136:   }
+137: }
+
+[MASTER] 15:33:16.858 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+double[] doubleArray0 = new double[3];
+doubleArray0[2] = (-2101.5);
+doubleArray0[2] = 2063.283;
+int int0 = ArrayUtils.indexOf(doubleArray0, 0.0, 0);
+assertArrayEquals(new double[] {0.0, 0.0, 2063.283}, doubleArray0, 0.01);
+assertEquals(3, doubleArray0.length);
+assertEquals(0, int0);
+
+double[] doubleArray1 = ArrayUtils.add(doubleArray0, 0, 1.0);
+assertArrayEquals(new double[] {0.0, 0.0, 2063.283}, doubleArray0, 0.01);
+assertArrayEquals(new double[] {1.0, 0.0, 0.0, 2063.283}, doubleArray1, 0.01);
+assertEquals(3, doubleArray0.length);
+assertEquals(4, doubleArray1.length);
+assertFalse(doubleArray1.equals((Object)doubleArray0));
+assertNotSame(doubleArray0, doubleArray1);
+assertNotSame(doubleArray1, doubleArray0);
+assertNotNull(doubleArray1);
+
+float[] floatArray0 = new float[5];
+floatArray0[0] = (float) 0;
+floatArray0[1] = (float) 0;
+Double double0 = new Double(0);
+assertNotNull(double0);
+assertEquals(0.0, (double)double0, 0.01);
+
+Double double1 = new Double(1.0);
+assertNotEquals((double)double1, (double)double0, 0.01);
+assertNotNull(double1);
+assertEquals(1.0, (double)double1, 0.01);
+
+AbstractMap.SimpleImmutableEntry<Double, Double> abstractMap_SimpleImmutableEntry0 = new AbstractMap.SimpleImmutableEntry<Double, Double>(double0, double1);
+assertNotEquals((double)double0, (double)double1, 0.01);
+assertNotEquals((double)double1, (double)double0, 0.01);
+assertNotNull(abstractMap_SimpleImmutableEntry0);
+
+AbstractMap.SimpleEntry<Double, Double> abstractMap_SimpleEntry0 = new AbstractMap.SimpleEntry<Double, Double>(abstractMap_SimpleImmutableEntry0);
+assertNotEquals((double)double0, (double)double1, 0.01);
+assertNotEquals((double)double1, (double)double0, 0.01);
+assertNotNull(abstractMap_SimpleEntry0);
+
+Comparator<Object> comparator0 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+Comparator<Map.Entry<Double, Long>> comparator1 = (Comparator<Map.Entry<Double, Long>>)Map.Entry.comparingByValue((Comparator<? super Long>) comparator0);
+assertNotNull(comparator1);
+
+AbstractMap.SimpleImmutableEntry<Double, Double> abstractMap_SimpleImmutableEntry1 = new AbstractMap.SimpleImmutableEntry<Double, Double>(abstractMap_SimpleEntry0);
+assertNotEquals((double)double0, (double)double1, 0.01);
+assertNotEquals((double)double1, (double)double0, 0.01);
+assertNotNull(abstractMap_SimpleImmutableEntry1);
+
+AbstractMap.SimpleImmutableEntry<Double, Double> abstractMap_SimpleImmutableEntry2 = new AbstractMap.SimpleImmutableEntry<Double, Double>(abstractMap_SimpleImmutableEntry1);
+assertNotEquals((double)double0, (double)double1, 0.01);
+assertNotEquals((double)double1, (double)double0, 0.01);
+assertNotNull(abstractMap_SimpleImmutableEntry2);
+
+Double double2 = new Double(4673.91493);
+assertNotEquals((double)double2, (double)double0, 0.01);
+assertNotEquals((double)double2, (double)double1, 0.01);
+assertNotNull(double2);
+assertEquals(4673.91493, (double)double2, 0.01);
+
+Double double3 = new Double(0);
+assertNotEquals((double)double3, (double)double2, 0.01);
+assertNotEquals((double)double3, (double)double1, 0.01);
+assertEquals((double)double3, (double)double0, 0.01);
+assertNotNull(double3);
+assertEquals(0.0, (double)double3, 0.01);
+
+AbstractMap.SimpleImmutableEntry<Double, Double> abstractMap_SimpleImmutableEntry3 = new AbstractMap.SimpleImmutableEntry<Double, Double>(double3, double2);
+assertNotEquals((double)double2, (double)double0, 0.01);
+assertNotEquals((double)double2, (double)double1, 0.01);
+assertNotEquals((double)double2, (double)double3, 0.01);
+assertNotEquals((double)double3, (double)double2, 0.01);
+assertNotEquals((double)double3, (double)double1, 0.01);
+assertEquals((double)double3, (double)double0, 0.01);
+assertFalse(abstractMap_SimpleImmutableEntry3.equals((Object)abstractMap_SimpleImmutableEntry2));
+assertNotNull(abstractMap_SimpleImmutableEntry3);
+
+Comparator<AbstractMap.SimpleImmutableEntry<Double, Double>> comparator2 = (Comparator<AbstractMap.SimpleImmutableEntry<Double, Double>>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+boolean boolean0 = ArrayUtils.isSorted((AbstractMap.SimpleImmutableEntry<Double, Double>[]) null, comparator2);
+assertTrue(boolean0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing tests to file
+* Writing JUnit test case 'ArrayUtils_ESTest' to results/default_120/Lang/org_apache_commons_lang3_ArrayUtils/tests/8
+* Done!
+
+* Computation finished

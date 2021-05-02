@@ -1,0 +1,78 @@
+* EvoSuite 1.1.0
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.math3.fraction.AbstractFormat
+* Starting Client-0
+* Connecting to master process on port 16038
+* Analyzing classpath: 
+  - projects/Math/commons-math3-3.6.1-tools.jar
+  - projects/Math/commons-math3-3.6.1.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.math3.fraction.AbstractFormat
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 14:50:43.969 [logback-2] ERROR AbstractMOSA - I am OFF
+* Total number of test goals for DYNAMOSA: 267
+* Using seed 1632069646
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 154 / 267
+* Computation finished
+[MASTER] 14:50:52.371 [logback-2] ERROR TestCaseExecutor - TG: Exception caught: 
+java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.runtime.sandbox.MSecurityManager.goingToEndTestCase(MSecurityManager.java:359)
+	at org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(Sandbox.java:141)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:275)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:262)
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:138)
+	at org.evosuite.ga.metaheuristics.mosa.structural.MultiCriteriaManager.calculateFitness(MultiCriteriaManager.java:386)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.calculateFitness(DynaMOSA.java:184)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.calculateFitness(DynaMOSA.java:42)
+	at org.evosuite.ga.metaheuristics.GeneticAlgorithm.calculateFitness(GeneticAlgorithm.java:579)
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.initializePopulation(AbstractMOSA.java:363)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.generateSolution(DynaMOSA.java:149)
+	at org.evosuite.ga.metaheuristics.TestSuiteAdapter.generateSolution(TestSuiteAdapter.java:114)
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:123)
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:630)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:205)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[MASTER] 14:50:52.371 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.math3.fraction.AbstractFormat with seed 1632069646. Configuration id : default_120
+java.lang.Error: java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:144)
+	at org.evosuite.ga.metaheuristics.mosa.structural.MultiCriteriaManager.calculateFitness(MultiCriteriaManager.java:386)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.calculateFitness(DynaMOSA.java:184)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.calculateFitness(DynaMOSA.java:42)
+	at org.evosuite.ga.metaheuristics.GeneticAlgorithm.calculateFitness(GeneticAlgorithm.java:579)
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.initializePopulation(AbstractMOSA.java:363)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.generateSolution(DynaMOSA.java:149)
+	at org.evosuite.ga.metaheuristics.TestSuiteAdapter.generateSolution(TestSuiteAdapter.java:114)
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:123)
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:630)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:205)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Trying to disable sandbox when not test case was run
+	at org.evosuite.runtime.sandbox.MSecurityManager.goingToEndTestCase(MSecurityManager.java:359)
+	at org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(Sandbox.java:141)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:275)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:262)
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:138)
+	... 16 common frames omitted
+[MASTER] 14:50:52.488 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case
+[MASTER] 14:50:52.590 [main] ERROR TestGeneration - failed to write statistics data

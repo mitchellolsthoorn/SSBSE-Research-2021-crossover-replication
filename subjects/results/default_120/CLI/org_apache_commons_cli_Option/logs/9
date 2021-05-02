@@ -1,0 +1,24 @@
+* EvoSuite 1.1.0
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.cli.Option
+* Starting Client-0
+* Connecting to master process on port 8326
+[MASTER] 15:33:22.487 [logback-2] ERROR ClientNodeImpl - Error when connecting to master via RMI
+java.lang.SecurityException: Unprivileged thread "main" cannot add a privileged thread: failed to add "Statistics sender in client process"
+Current privileged threads are: 
+"pool-3-thread-1"
+"Reference Handler"
+	at org.evosuite.runtime.sandbox.MSecurityManager.addPrivilegedThread(MSecurityManager.java:395)
+	at org.evosuite.runtime.sandbox.Sandbox.addPrivilegedThread(Sandbox.java:92)
+	at org.evosuite.rmi.service.ClientNodeImpl.init(ClientNodeImpl.java:393)
+	at org.evosuite.rmi.ClientServices.registerServices(ClientServices.java:70)
+	at org.evosuite.ClientProcess.run(ClientProcess.java:83)
+	at org.evosuite.ClientProcess.main(ClientProcess.java:191)
+* Analyzing classpath: 
+[MASTER] 15:33:22.611 [logback-2] ERROR ClientProcess - Error when generating tests for: org.apache.commons.cli.Option with seed 1710070569. Configuration id : default_120
+java.lang.RuntimeException: Could not connect to master process on port 8326
+	at org.evosuite.ClientProcess.run(ClientProcess.java:88)
+	at org.evosuite.ClientProcess.main(ClientProcess.java:191)
+* Computation finished
+[MASTER] 15:33:23.229 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case
+[MASTER] 15:33:23.361 [main] ERROR TestGeneration - failed to write statistics data

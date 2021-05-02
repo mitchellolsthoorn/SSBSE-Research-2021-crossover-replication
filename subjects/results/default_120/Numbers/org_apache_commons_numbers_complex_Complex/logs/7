@@ -1,0 +1,86 @@
+* EvoSuite 1.1.0
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.numbers.complex.Complex
+* Starting Client-0
+* Connecting to master process on port 16788
+* Analyzing classpath: 
+  - projects/Numbers/commons-numbers-complex-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-angle-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-gamma-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-fraction-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-combinatorics-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-primes-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-rootfinder-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-core-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-arrays-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-field-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-quaternion-1.0-beta1.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.numbers.complex.Complex
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 15:18:38.057 [logback-2] ERROR AbstractMOSA - I am OFF
+* Total number of test goals for DYNAMOSA: 3597
+* Using seed 2115747840
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 1751 / 3597
+[MASTER] 15:18:51.542 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2070: org.apache.commons.numbers.complex.Complex.coshsinh(DDDZLorg/apache/commons/numbers/complex/Complex$ComplexConstructor;)Lorg/apache/commons/numbers/complex/Complex;:2373 - ReplaceComparisonOperator <= -> -1
+* Search finished after 123s and 32 generations, 27145 statements, best individual has fitness: 608.0
+* Minimizing test suite
+[MASTER] 15:22:50.441 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 93%
+* Total number of goals: 661
+* Number of covered goals: 616
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 92%
+* Total number of goals: 478
+* Number of covered goals: 442
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 822
+* Number of covered goals: 753
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 86%
+* Total number of goals: 1052
+* Number of covered goals: 902
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 53
+* Number of covered goals: 53
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 53
+* Number of covered goals: 53
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 37%
+* Total number of goals: 478
+* Number of covered goals: 176
+* Generated 316 tests with total length 3919
+* Resulting test suite's coverage: 82% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 15:24:18.666 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6667666666666666% of time used, but only 22/316 tests minimized), falling back to using all assertions
+[MASTER] 15:24:58.678 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 13%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 7
+* Writing tests to file
+* Writing JUnit test case 'Complex_ESTest' to results/default_120/Numbers/org_apache_commons_numbers_complex_Complex/tests/7
+[MASTER] 15:27:05.858 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 8 seconds more than allowed.
+* Done!
+
+* Computation finished

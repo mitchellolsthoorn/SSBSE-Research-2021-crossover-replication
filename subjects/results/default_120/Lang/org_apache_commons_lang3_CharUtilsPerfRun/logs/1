@@ -1,0 +1,4 @@
+* EvoSuite 1.1.0
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.lang3.CharUtilsPerfRun
+* Unknown class: org.apache.commons.lang3.CharUtilsPerfRun. Be sure its full qualifying name  is correct and the classpath is properly set with '-projectCP'

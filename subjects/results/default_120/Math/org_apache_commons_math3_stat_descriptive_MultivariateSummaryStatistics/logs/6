@@ -1,0 +1,64 @@
+* EvoSuite 1.1.0
+* Configuration: default_120
+* Going to generate test cases for class: org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics
+* Starting Client-0
+* Connecting to master process on port 8942
+* Analyzing classpath: 
+  - projects/Math/commons-math3-3.6.1-tools.jar
+  - projects/Math/commons-math3-3.6.1.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 15:17:27.195 [logback-2] ERROR AbstractMOSA - I am OFF
+* Total number of test goals for DYNAMOSA: 884
+* Using seed 2245689746
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 477 / 884
+* Search finished after 471s and 6 generations, 2563 statements, best individual has fitness: 172.0
+[MASTER] 15:25:18.932 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 351 seconds more than allowed.
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 91%
+* Total number of goals: 145
+* Number of covered goals: 132
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 68%
+* Total number of goals: 71
+* Number of covered goals: 48
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 96%
+* Total number of goals: 25
+* Number of covered goals: 24
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 87%
+* Total number of goals: 461
+* Number of covered goals: 403
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 49%
+* Total number of goals: 74
+* Number of covered goals: 36
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 68%
+* Total number of goals: 71
+* Number of covered goals: 48
+* Generated 61 tests with total length 148
+* Resulting test suite's coverage: 78% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 15:27:07.389 [logback-1] WARN  TimeController - Current phase ASSERTION_GENERATION could run up to 120s, but only 74s are left

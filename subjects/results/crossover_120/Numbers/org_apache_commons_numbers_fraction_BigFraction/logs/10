@@ -1,0 +1,90 @@
+* EvoSuite 1.1.0
+* Configuration: crossover_120
+* Going to generate test cases for class: org.apache.commons.numbers.fraction.BigFraction
+* Starting Client-0
+* Connecting to master process on port 19180
+* Analyzing classpath: 
+  - projects/Numbers/commons-numbers-complex-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-angle-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-gamma-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-fraction-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-combinatorics-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-primes-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-rootfinder-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-core-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-arrays-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-field-1.0-beta1.jar
+  - projects/Numbers/commons-numbers-quaternion-1.0-beta1.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.numbers.fraction.BigFraction
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 1967
+* Using seed 1108272269
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 706 / 1967
+[MASTER] 15:36:26.933 [logback-2] ERROR TestCaseExecutor - TG: Exception caught: 
+java.lang.IllegalStateException: Trying to set up the sandbox while executing a test case
+	at org.evosuite.runtime.sandbox.MSecurityManager.goingToExecuteTestCase(MSecurityManager.java:347)
+	at org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(Sandbox.java:130)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:329)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:275)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:262)
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:138)
+	at org.evosuite.ga.metaheuristics.mosa.structural.MultiCriteriaManager.calculateFitness(MultiCriteriaManager.java:386)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.calculateFitness(DynaMOSA.java:184)
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.breedNextGeneration(AbstractMOSA.java:178)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.evolve(DynaMOSA.java:66)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.generateSolution(DynaMOSA.java:167)
+	at org.evosuite.ga.metaheuristics.TestSuiteAdapter.generateSolution(TestSuiteAdapter.java:114)
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:123)
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:630)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:205)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[MASTER] 15:36:26.933 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.numbers.fraction.BigFraction with seed 1108272269. Configuration id : crossover_120
+java.lang.Error: java.lang.IllegalStateException: Trying to set up the sandbox while executing a test case
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:144)
+	at org.evosuite.ga.metaheuristics.mosa.structural.MultiCriteriaManager.calculateFitness(MultiCriteriaManager.java:386)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.calculateFitness(DynaMOSA.java:184)
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.breedNextGeneration(AbstractMOSA.java:178)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.evolve(DynaMOSA.java:66)
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.generateSolution(DynaMOSA.java:167)
+	at org.evosuite.ga.metaheuristics.TestSuiteAdapter.generateSolution(TestSuiteAdapter.java:114)
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:123)
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:630)
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:205)
+	at org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Trying to set up the sandbox while executing a test case
+	at org.evosuite.runtime.sandbox.MSecurityManager.goingToExecuteTestCase(MSecurityManager.java:347)
+	at org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(Sandbox.java:130)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:329)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:275)
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:262)
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:138)
+	... 15 common frames omitted
+* Computation finished
+[MASTER] 15:36:27.223 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 15:36:29.226 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 15:36:30.227 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 15:36:31.228 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 15:36:32.228 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 15:36:33.229 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 15:36:33.229 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing
+[MASTER] 15:36:33.330 [main] ERROR TestGeneration - failed to write statistics data

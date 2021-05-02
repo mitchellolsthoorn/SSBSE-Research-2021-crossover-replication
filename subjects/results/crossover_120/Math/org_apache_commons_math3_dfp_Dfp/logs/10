@@ -1,0 +1,439 @@
+* EvoSuite 1.1.0
+* Configuration: crossover_120
+* Going to generate test cases for class: org.apache.commons.math3.dfp.Dfp
+* Starting Client-0
+* Connecting to master process on port 17895
+* Analyzing classpath: 
+  - projects/Math/commons-math3-3.6.1-tools.jar
+  - projects/Math/commons-math3-3.6.1.jar
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.math3.dfp.Dfp
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for DYNAMOSA: 5513
+* Using seed 3842459213
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 2220 / 5513
+* Search finished after 123s and 10 generations, 598 statements, best individual has fitness: 4869.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 24%
+* Total number of goals: 1098
+* Number of covered goals: 259
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 19%
+* Total number of goals: 884
+* Number of covered goals: 167
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 19%
+* Total number of goals: 908
+* Number of covered goals: 177
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 1517
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 6%
+* Total number of goals: 111
+* Number of covered goals: 7
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 0%
+* Total number of goals: 111
+* Number of covered goals: 0
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 6%
+* Total number of goals: 884
+* Number of covered goals: 57
+* Generated 8 tests with total length 8
+* Resulting test suite's coverage: 15% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+[MASTER] 15:36:37.860 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: /usr/local/openjdk-8/jre/lib/amd64/libfontmanager.so: libfreetype.so.6: cannot open shared object file: No such file or directory
+Stack trace:
+java.lang.ClassLoader$NativeLibrary.load(Native Method)
+java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1934)
+java.lang.ClassLoader.loadLibrary(ClassLoader.java:1838)
+java.lang.Runtime.loadLibrary0(Runtime.java:871)
+java.lang.System.loadLibrary(System.java:1124)
+sun.font.FontManagerNativeLibrary$1.run(FontManagerNativeLibrary.java:61)
+java.security.AccessController.doPrivileged(Native Method)
+sun.font.FontManagerNativeLibrary.<clinit>(FontManagerNativeLibrary.java:32)
+sun.font.SunFontManager$1.run(SunFontManager.java:346)
+java.security.AccessController.doPrivileged(Native Method)
+sun.font.SunFontManager.<clinit>(SunFontManager.java:342)
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.Dfp_8_tmp__ESTest_scaffolding.initEvoSuiteFramework(Dfp_8_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 15:36:37.964 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: Could not initialize class sun.font.SunFontManager
+Stack trace:
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.Dfp_9_tmp__ESTest_scaffolding.initEvoSuiteFramework(Dfp_9_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 15:36:38.153 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: Could not initialize class sun.font.SunFontManager
+Stack trace:
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.Dfp_10_tmp__ESTest_scaffolding.initEvoSuiteFramework(Dfp_10_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 15:36:38.303 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: Could not initialize class sun.font.SunFontManager
+Stack trace:
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.Dfp_11_tmp__ESTest_scaffolding.initEvoSuiteFramework(Dfp_11_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 15:36:38.523 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: Could not initialize class sun.font.SunFontManager
+Stack trace:
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.Dfp_12_tmp__ESTest_scaffolding.initEvoSuiteFramework(Dfp_12_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 15:36:38.702 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: Could not initialize class sun.font.SunFontManager
+Stack trace:
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.Dfp_13_tmp__ESTest_scaffolding.initEvoSuiteFramework(Dfp_13_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 15:36:38.811 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: Could not initialize class sun.font.SunFontManager
+Stack trace:
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.Dfp_14_tmp__ESTest_scaffolding.initEvoSuiteFramework(Dfp_14_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 15:36:38.931 [logback-2] ERROR JUnitAnalyzer - Issue in scaffolding of the test suite: Could not initialize class sun.font.SunFontManager
+Stack trace:
+sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:264)
+sun.swing.SwingUtilities2.getFontMetrics(SwingUtilities2.java:1125)
+javax.swing.JComponent.getFontMetrics(JComponent.java:1626)
+org.evosuite.runtime.GuiSupport.initialize(GuiSupport.java:96)
+org.apache.commons.math3.dfp.Dfp_15_tmp__ESTest_scaffolding.initEvoSuiteFramework(Dfp_15_tmp__ESTest_scaffolding.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+org.junit.internal.runners.statements.RunBefores.invokeMethod(RunBefores.java:33)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runners.Suite.runChild(Suite.java:128)
+org.junit.runners.Suite.runChild(Suite.java:27)
+org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+org.evosuite.junit.JUnitAnalyzer.runJUnitOnCurrentProcess(JUnitAnalyzer.java:306)
+org.evosuite.junit.JUnitAnalyzer.runTests(JUnitAnalyzer.java:276)
+org.evosuite.junit.JUnitAnalyzer.handleTestsThatAreUnstable(JUnitAnalyzer.java:178)
+org.evosuite.TestSuiteGenerator.compileAndCheckTests(TestSuiteGenerator.java:571)
+org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:516)
+org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:215)
+org.evosuite.rmi.service.ClientNodeImpl.lambda$startNewSearch$0(ClientNodeImpl.java:150)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)
+
+* Writing tests to file
+* Writing JUnit test case 'Dfp_ESTest' to results/crossover_120/Math/org_apache_commons_math3_dfp_Dfp/tests/10
+* Done!
+
+* Computation finished
