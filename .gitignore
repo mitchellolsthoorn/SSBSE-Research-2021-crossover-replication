@@ -70,3 +70,6 @@ subjects/**/site-content
 
 !projects.csv
 !configurations.csv
+
+# ignore local directory, which is used for local tests
+local
