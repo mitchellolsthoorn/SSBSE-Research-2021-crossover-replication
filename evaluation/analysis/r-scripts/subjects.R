@@ -12,7 +12,8 @@ df <- raw_results %>%
 ### Collect the 100 CUTs ###
 # Filter out non-interesting classes: test classes, non trivial classes, classes without strings and numbers input arguments
 df <- df %>% filter(sum_string_args != 0 & sum_number_args != 0) %>%
-  filter(!grepl("Test", class, fixed=TRUE)) %>%
+  filter(!grepl("Test", class, fixed=TRUE) &
+           class != "org.apache.commons.rng.core.RandomAssert") %>%
   arrange(desc(avg_ccn)) # Sort the selected classes according to their average ccn
 
 final_df = head(df, 100) # Select top 10

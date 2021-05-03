@@ -60,7 +60,6 @@ Text,org.apache.commons.text.lookup.DateStringLookup
 Text,org.apache.commons.text.StrMatcher$StringMatcher
 Math,org.apache.commons.math3.ode.AbstractFieldIntegrator
 Math,org.apache.commons.math3.complex.ComplexFormat
-RNG,org.apache.commons.rng.core.RandomAssert
 Math,org.apache.commons.math3.dfp.DfpField
 Geometry,org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter
 Lang,org.apache.commons.lang3.ObjectUtils
@@ -99,3 +98,4 @@ Geometry,org.apache.commons.geometry.euclidean.twod.PolarCoordinates
 CLI,org.apache.commons.cli.Option
 Math,org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics
 Numbers,org.apache.commons.numbers.quaternion.Quaternion
+Lang,org.apache.commons.lang3.time.FastDateParser$CaseInsensitiveTextStrategy
