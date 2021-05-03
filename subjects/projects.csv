@@ -16,7 +16,6 @@ Numbers,org.apache.commons.numbers.complex.Complex
 Lang,org.apache.commons.lang3.text.WordUtils
 Text,org.apache.commons.text.AlphabetConverter
 Lang,org.apache.commons.lang3.math.NumberUtils
-Math,RealFunctionValidation$ApplicationProperties
 Lang,org.apache.commons.lang3.StringUtils
 Lang,org.apache.commons.lang3.BooleanUtils
 Text,org.apache.commons.text.ExtendedMessageFormat
@@ -99,3 +98,4 @@ CLI,org.apache.commons.cli.Option
 Math,org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics
 Numbers,org.apache.commons.numbers.quaternion.Quaternion
 Lang,org.apache.commons.lang3.time.FastDateParser$CaseInsensitiveTextStrategy
+Math,org.apache.commons.math3.ode.MultistepFieldIntegrator
