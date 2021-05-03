@@ -12,9 +12,17 @@ df <- raw_results %>%
 ### Collect the 100 CUTs ###
 # Filter out non-interesting classes: test classes, non trivial classes, classes without strings and numbers input arguments
 df <- df %>% filter(sum_string_args != 0 & sum_number_args != 0) %>%
-  filter(!grepl("Test", class, fixed=TRUE) &
+  filter(
+           # ignore test classes
+           !grepl("Test", class, fixed=TRUE) &
            class != "org.apache.commons.rng.core.RandomAssert" &
-           class != "RealFunctionValidation$ApplicationProperties") %>%
+           class != "RealFunctionValidation$ApplicationProperties" &
+           class != "org.apache.commons.math3.fitting.leastsquares.StatisticalReferenceDataset" &
+           class != "org.apache.commons.math3.optimization.general.StatisticalReferenceDataset" &
+           class != "org.apache.commons.math3.optim.nonlinear.vector.jacobian.StatisticalReferenceDataset" &
+           class != "org.apache.commons.math3.geometry.partitioning.RegionDumper$TreeDumper" &
+           # ignore Math's userguide classes
+           !grepl("math3.userguide", class, fixed=TRUE)) %>%
   arrange(desc(avg_ccn)) # Sort the selected classes according to their average ccn
 
 final_df = head(df, 100) # Select top 10

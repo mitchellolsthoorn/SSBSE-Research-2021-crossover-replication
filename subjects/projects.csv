@@ -38,15 +38,11 @@ Math,org.apache.commons.math3.util.CompositeFormat
 Text,org.apache.commons.text.StrBuilder
 Logging,org.apache.commons.logging.impl.SimpleLog
 Lang,org.apache.commons.lang3.text.StrBuilder
-Math,org.apache.commons.math3.optimization.general.StatisticalReferenceDataset
 Lang,org.apache.commons.lang3.time.DateUtils
-Math,org.apache.commons.math3.userguide.RealDistributionComparison
 Lang,org.apache.commons.lang3.exception.ExceptionUtils
 Text,org.apache.commons.text.TextStringBuilder
 RNG,org.apache.commons.rng.examples.stress.RNGUtils
 Lang,org.apache.commons.lang3.CharUtilsPerfRun
-Math,org.apache.commons.math3.fitting.leastsquares.StatisticalReferenceDataset
-Math,org.apache.commons.math3.optim.nonlinear.vector.jacobian.StatisticalReferenceDataset
 Lang,org.apache.commons.lang3.RandomStringUtils
 Math,org.apache.commons.math3.ode.AbstractIntegrator
 Numbers,org.apache.commons.numbers.fraction.Fraction
@@ -63,7 +59,6 @@ Math,org.apache.commons.math3.dfp.DfpField
 Geometry,org.apache.commons.geometry.core.partitioning.bsp.BSPTreePrinter
 Lang,org.apache.commons.lang3.ObjectUtils
 Math,org.apache.commons.math3.ode.ParameterJacobianWrapper
-Math,org.apache.commons.math3.userguide.sofm.ChineseRingsClassifier
 Geometry,org.apache.commons.geometry.core.internal.SimpleTupleFormat
 Geometry,org.apache.commons.geometry.examples.tutorials.bsp.BSPTreeSVGWriter$TreeStructureVisitor
 Math,org.apache.commons.math3.random.RandomDataGenerator
@@ -91,7 +86,6 @@ RNG,org.apache.commons.rng.sampling.distribution.MarsagliaTsangWangDiscreteSampl
 Geometry,org.apache.commons.geometry.examples.io.threed.obj.OBJWriter
 Geometry,org.apache.commons.geometry.euclidean.threed.SphericalCoordinates
 Math,org.apache.commons.math3.fraction.AbstractFormat
-Math,org.apache.commons.math3.geometry.partitioning.RegionDumper$TreeDumper
 RNG,org.apache.commons.rng.sampling.distribution.MarsagliaTsangWangDiscreteSampler
 Geometry,org.apache.commons.geometry.euclidean.twod.PolarCoordinates
 CLI,org.apache.commons.cli.Option
@@ -99,3 +93,9 @@ Math,org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics
 Numbers,org.apache.commons.numbers.quaternion.Quaternion
 Lang,org.apache.commons.lang3.time.FastDateParser$CaseInsensitiveTextStrategy
 Math,org.apache.commons.math3.ode.MultistepFieldIntegrator
+Geometry,org.apache.commons.geometry.euclidean.internal.Matrices
+Geometry,org.apache.commons.geometry.spherical.oned.Point1S
+Geometry,org.apache.commons.geometry.euclidean.threed.Vector3D
+Geometry,org.apache.commons.geometry.euclidean.twod.Vector2D
+Geometry,org.apache.commons.geometry.examples.tutorials.bsp.BSPTreeSVGWriter
+Lang,org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle
