@@ -21,6 +21,8 @@ df <- df %>% filter(sum_string_args != 0 & sum_number_args != 0) %>%
            class != "org.apache.commons.math3.optimization.general.StatisticalReferenceDataset" &
            class != "org.apache.commons.math3.optim.nonlinear.vector.jacobian.StatisticalReferenceDataset" &
            class != "org.apache.commons.math3.geometry.partitioning.RegionDumper$TreeDumper" &
+           class != "org.apache.commons.lang3.CharUtilsPerfRun" &
+           class != "org.apache.commons.math3.ml.neuralnet.sofm.City" &
            # ignore Math's userguide classes
            !grepl("math3.userguide", class, fixed=TRUE)) %>%
   arrange(desc(avg_ccn)) # Sort the selected classes according to their average ccn

@@ -42,7 +42,6 @@ Lang,org.apache.commons.lang3.time.DateUtils
 Lang,org.apache.commons.lang3.exception.ExceptionUtils
 Text,org.apache.commons.text.TextStringBuilder
 RNG,org.apache.commons.rng.examples.stress.RNGUtils
-Lang,org.apache.commons.lang3.CharUtilsPerfRun
 Lang,org.apache.commons.lang3.RandomStringUtils
 Math,org.apache.commons.math3.ode.AbstractIntegrator
 Numbers,org.apache.commons.numbers.fraction.Fraction
@@ -99,3 +98,4 @@ Geometry,org.apache.commons.geometry.euclidean.threed.Vector3D
 Geometry,org.apache.commons.geometry.euclidean.twod.Vector2D
 Geometry,org.apache.commons.geometry.examples.tutorials.bsp.BSPTreeSVGWriter
 Lang,org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle
+Math,org.apache.commons.math3.ode.MultistepIntegrator
