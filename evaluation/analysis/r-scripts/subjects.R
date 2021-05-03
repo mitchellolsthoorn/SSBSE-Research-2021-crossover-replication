@@ -26,7 +26,16 @@ df <- df %>% filter(sum_string_args != 0 & sum_number_args != 0) %>%
            class != "org.apache.commons.geometry.spherical.oned.Point1S" &
            class != "org.apache.commons.geometry.examples.jmh.euclidean.VectorPerformance$VectorInputBase" &
            # ignore Math's userguide classes
-           !grepl("math3.userguide", class, fixed=TRUE)) %>%
+           !grepl("math3.userguide", class, fixed=TRUE) &
+           # ignore private inner classes (EvoSuite cannot cover them at all)
+           class != "org.apache.commons.text.StrMatcher$StringMatcher" &
+           class != "org.apache.commons.rng.sampling.distribution.MarsagliaTsangWangDiscreteSampler$MarsagliaTsangWangBase64Int8DiscreteSampler" &
+           class != "org.apache.commons.rng.sampling.distribution.MarsagliaTsangWangDiscreteSampler$MarsagliaTsangWangBase64Int32DiscreteSampler" &
+           class != "org.apache.commons.rng.sampling.distribution.MarsagliaTsangWangDiscreteSampler$MarsagliaTsangWangBase64Int16DiscreteSampler" &
+           class != "org.apache.commons.lang3.time.FastDateParser$NumberStrategy" &
+           class != "org.apache.commons.lang3.time.FastDateParser$ISO8601TimeZoneStrategy" &
+           class != "org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy" &
+           class != "org.apache.commons.lang3.text.StrMatcher$StringMatcher") %>%
   arrange(desc(avg_ccn)) # Sort the selected classes according to their average ccn
 
 final_df = head(df, 100) # Select top 10

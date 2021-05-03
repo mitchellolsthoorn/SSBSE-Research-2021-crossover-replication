@@ -23,7 +23,6 @@ Lang,org.apache.commons.lang3.text.ExtendedMessageFormat
 RNG,org.apache.commons.rng.examples.stress.ResultsCommand
 Math,org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeFieldIntegrator
 Math,org.apache.commons.math3.ode.nonstiff.AdaptiveStepsizeIntegrator
-Lang,org.apache.commons.lang3.time.FastDateParser$NumberStrategy
 Lang,org.apache.commons.lang3.builder.DiffBuilder
 Math,org.apache.commons.math3.util.FastMathCalc
 Math,org.apache.commons.math3.linear.MatrixUtils
@@ -46,11 +45,8 @@ Math,org.apache.commons.math3.ode.AbstractIntegrator
 Numbers,org.apache.commons.numbers.fraction.Fraction
 Math,org.apache.commons.math3.ode.JacobianMatrices
 Geometry,org.apache.commons.geometry.examples.io.threed.obj.OBJReader
-Lang,org.apache.commons.lang3.text.StrMatcher$StringMatcher
-Lang,org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy
 Numbers,org.apache.commons.numbers.arrays.MultidimensionalCounter
 Text,org.apache.commons.text.lookup.DateStringLookup
-Text,org.apache.commons.text.StrMatcher$StringMatcher
 Math,org.apache.commons.math3.ode.AbstractFieldIntegrator
 Math,org.apache.commons.math3.complex.ComplexFormat
 Math,org.apache.commons.math3.dfp.DfpField
@@ -72,15 +68,11 @@ Text,org.apache.commons.text.StringSubstitutor
 Text,org.apache.commons.text.StringTokenizer
 Text,org.apache.commons.text.StrTokenizer
 Lang,org.apache.commons.lang3.text.StrMatcher
-Lang,org.apache.commons.lang3.time.FastDateParser$ISO8601TimeZoneStrategy
 Lang,org.apache.commons.lang3.text.StrTokenizer
 Math,org.apache.commons.math3.geometry.VectorFormat
 Lang,org.apache.commons.lang3.CharUtils
 Geometry,org.apache.commons.geometry.spherical.twod.Point2S
 Math,org.apache.commons.math3.stat.descriptive.rank.Percentile$EstimationType
-RNG,org.apache.commons.rng.sampling.distribution.MarsagliaTsangWangDiscreteSampler$MarsagliaTsangWangBase64Int16DiscreteSampler
-RNG,org.apache.commons.rng.sampling.distribution.MarsagliaTsangWangDiscreteSampler$MarsagliaTsangWangBase64Int32DiscreteSampler
-RNG,org.apache.commons.rng.sampling.distribution.MarsagliaTsangWangDiscreteSampler$MarsagliaTsangWangBase64Int8DiscreteSampler
 Geometry,org.apache.commons.geometry.examples.io.threed.obj.OBJWriter
 Geometry,org.apache.commons.geometry.euclidean.threed.SphericalCoordinates
 Math,org.apache.commons.math3.fraction.AbstractFormat
@@ -99,3 +91,11 @@ Lang,org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle
 Math,org.apache.commons.math3.ode.MultistepIntegrator
 Lang,org.apache.commons.lang3.time.FastDateParser$PatternStrategy
 Geometry,org.apache.commons.geometry.euclidean.oned.Vector1D
+Math,org.apache.commons.math3.ode.ParameterizedWrapper
+Math,org.apache.commons.math3.random.ValueServer
+Math,org.apache.commons.math3.util.BigReal
+CLI,org.apache.commons.cli.Option$Builder
+CLI,org.apache.commons.cli.OptionBuilder
+Lang,org.apache.commons.lang3.builder.ToStringBuilder
+Lang,org.apache.commons.lang3.mutable.MutableDouble
+Lang,org.apache.commons.lang3.mutable.MutableFloat
