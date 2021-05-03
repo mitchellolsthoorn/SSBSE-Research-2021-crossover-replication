@@ -33,7 +33,6 @@ Numbers,org.apache.commons.numbers.fraction.BigFraction
 Lang,org.apache.commons.lang3.ClassUtils
 Lang,org.apache.commons.lang3.time.FastDatePrinter
 CLI,org.apache.commons.cli.HelpFormatter
-Geometry,org.apache.commons.geometry.examples.jmh.euclidean.VectorPerformance$VectorInputBase
 Math,org.apache.commons.math3.util.CompositeFormat
 Text,org.apache.commons.text.StrBuilder
 Logging,org.apache.commons.logging.impl.SimpleLog
@@ -93,9 +92,10 @@ Numbers,org.apache.commons.numbers.quaternion.Quaternion
 Lang,org.apache.commons.lang3.time.FastDateParser$CaseInsensitiveTextStrategy
 Math,org.apache.commons.math3.ode.MultistepFieldIntegrator
 Geometry,org.apache.commons.geometry.euclidean.internal.Matrices
-Geometry,org.apache.commons.geometry.spherical.oned.Point1S
 Geometry,org.apache.commons.geometry.euclidean.threed.Vector3D
 Geometry,org.apache.commons.geometry.euclidean.twod.Vector2D
 Geometry,org.apache.commons.geometry.examples.tutorials.bsp.BSPTreeSVGWriter
 Lang,org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle
 Math,org.apache.commons.math3.ode.MultistepIntegrator
+Lang,org.apache.commons.lang3.time.FastDateParser$PatternStrategy
+Geometry,org.apache.commons.geometry.euclidean.oned.Vector1D
