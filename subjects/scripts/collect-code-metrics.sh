@@ -33,3 +33,12 @@ do
     cd $first_dir
 
 done < $components_csv
+
+
+component_dir="$code_dir/snowball-stemmer/src/java/org/tartarus/snowball/ext/"
+report_dir="$code_metrics_dir/snowball-stemmer"
+rm -rf $report_dir
+mkdir $report_dir
+cd $report_dir
+java -jar "$CK_jar" "$component_dir" true
+cd $first_dir

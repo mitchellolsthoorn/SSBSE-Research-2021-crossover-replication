@@ -36,9 +36,25 @@ df <- df %>% filter(sum_string_args != 0 & sum_number_args != 0) %>%
            class != "org.apache.commons.lang3.time.FastDateParser$ISO8601TimeZoneStrategy" &
            class != "org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy" &
            class != "org.apache.commons.lang3.text.StrMatcher$StringMatcher") %>%
+  filter(project != "Stemmer") %>%
   arrange(desc(avg_ccn)) # Sort the selected classes according to their average ccn
 
-final_df = head(df, 100) # Select top 10
+final_df = head(df, 100) # Select top 100
+
+# Add snowball stemmer classes
+stemmer_cases <- raw_results %>%
+  filter(project == "Stemmer")
+
+
+
+stemmer_cases <- stemmer_cases %>%
+  group_by(project,class) %>%
+  summarise(avg_ccn = mean(wmc),
+            sum_string_args= sum(string_args),
+            sum_number_args= sum(number_args))
+
+final_df <-rbind(final_df, stemmer_cases)
+
 
 # Save the selected CUTs to projects.csv
 subjects_df <- final_df %>% select(project, class)
