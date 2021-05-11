@@ -71,5 +71,8 @@ subjects/**/site-content
 !projects.csv
 !configurations.csv
 
+!results-default.tar.gz
+!results-crossover.tar.gz
+
 # ignore local directory, which is used for local tests
 local
